@@ -1,0 +1,1269 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cqc00t3t23m36"
+path="res://.godot/imported/cart1_low.fbx-16b7d60864464a7e52ed08e6a010749e.scn"
+
+[deps]
+
+source_file="res://Assets/propsv2/cart/cart1_low.fbx"
+dest_files=["res://.godot/imported/cart1_low.fbx-16b7d60864464a7e52ed08e6a010749e.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=24.0
+animation/trimming=true
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=true
+import_script/path=""
+_subresources={
+"animations": {},
+"materials": {
+"CART1": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/propsv2/cart/CART1.material"
+}
+},
+"meshes": {
+"Root Scene_cart1metal10_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal10_low.mesh"
+},
+"Root Scene_cart1metal10_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal10_low_001.mesh"
+},
+"Root Scene_cart1metal11_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal11_low.mesh"
+},
+"Root Scene_cart1metal12_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal12_low.mesh"
+},
+"Root Scene_cart1metal13_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal13_low.mesh"
+},
+"Root Scene_cart1metal14_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal14_low.mesh"
+},
+"Root Scene_cart1metal14_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal14_low_001.mesh"
+},
+"Root Scene_cart1metal14_low_002": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal14_low_002.mesh"
+},
+"Root Scene_cart1metal1_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal1_low.mesh"
+},
+"Root Scene_cart1metal1_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal1_low_001.mesh"
+},
+"Root Scene_cart1metal1_low_002": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal1_low_002.mesh"
+},
+"Root Scene_cart1metal1_low_003": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal1_low_003.mesh"
+},
+"Root Scene_cart1metal2_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal2_low.mesh"
+},
+"Root Scene_cart1metal2_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal2_low_001.mesh"
+},
+"Root Scene_cart1metal2_low_002": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal2_low_002.mesh"
+},
+"Root Scene_cart1metal2_low_003": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal2_low_003.mesh"
+},
+"Root Scene_cart1metal2_low_004": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal2_low_004.mesh"
+},
+"Root Scene_cart1metal2_low_005": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal2_low_005.mesh"
+},
+"Root Scene_cart1metal3_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low.mesh"
+},
+"Root Scene_cart1metal3_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_001.mesh"
+},
+"Root Scene_cart1metal3_low_002": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_002.mesh"
+},
+"Root Scene_cart1metal3_low_003": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_003.mesh"
+},
+"Root Scene_cart1metal3_low_004": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_004.mesh"
+},
+"Root Scene_cart1metal3_low_005": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_005.mesh"
+},
+"Root Scene_cart1metal3_low_006": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_006.mesh"
+},
+"Root Scene_cart1metal3_low_007": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_007.mesh"
+},
+"Root Scene_cart1metal4_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal4_low.mesh"
+},
+"Root Scene_cart1metal5_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal5_low.mesh"
+},
+"Root Scene_cart1metal6_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal6_low.mesh"
+},
+"Root Scene_cart1metal6_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal6_low_001.mesh"
+},
+"Root Scene_cart1metal6_low_002": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal6_low_002.mesh"
+},
+"Root Scene_cart1metal6_low_003": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal6_low_003.mesh"
+},
+"Root Scene_cart1metal7_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal7_low.mesh"
+},
+"Root Scene_cart1metal7_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal7_low_001.mesh"
+},
+"Root Scene_cart1metal8_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal8_low.mesh"
+},
+"Root Scene_cart1metal8_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal8_low_001.mesh"
+},
+"Root Scene_cart1metal9_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal9_low.mesh"
+},
+"Root Scene_cart1metal9_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal9_low_001.mesh"
+},
+"Root Scene_cart1wood10_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood10_low.mesh"
+},
+"Root Scene_cart1wood10_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood10_low_001.mesh"
+},
+"Root Scene_cart1wood11_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood11_low.mesh"
+},
+"Root Scene_cart1wood11_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood11_low_001.mesh"
+},
+"Root Scene_cart1wood12_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood12_low.mesh"
+},
+"Root Scene_cart1wood13_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood13_low.mesh"
+},
+"Root Scene_cart1wood14_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood14_low.mesh"
+},
+"Root Scene_cart1wood15_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood15_low.mesh"
+},
+"Root Scene_cart1wood16_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood16_low.mesh"
+},
+"Root Scene_cart1wood17_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood17_low.mesh"
+},
+"Root Scene_cart1wood1_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood1_low.mesh"
+},
+"Root Scene_cart1wood2_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood2_low.mesh"
+},
+"Root Scene_cart1wood3_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low.mesh"
+},
+"Root Scene_cart1wood3_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_001.mesh"
+},
+"Root Scene_cart1wood3_low_002": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_002.mesh"
+},
+"Root Scene_cart1wood3_low_003": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_003.mesh"
+},
+"Root Scene_cart1wood3_low_004": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_004.mesh"
+},
+"Root Scene_cart1wood3_low_005": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_005.mesh"
+},
+"Root Scene_cart1wood3_low_006": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_006.mesh"
+},
+"Root Scene_cart1wood3_low_007": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_007.mesh"
+},
+"Root Scene_cart1wood3_low_008": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_008.mesh"
+},
+"Root Scene_cart1wood3_low_009": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_009.mesh"
+},
+"Root Scene_cart1wood3_low_010": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_010.mesh"
+},
+"Root Scene_cart1wood3_low_011": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_011.mesh"
+},
+"Root Scene_cart1wood3_low_012": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_012.mesh"
+},
+"Root Scene_cart1wood3_low_013": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_013.mesh"
+},
+"Root Scene_cart1wood3_low_014": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_014.mesh"
+},
+"Root Scene_cart1wood3_low_015": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_015.mesh"
+},
+"Root Scene_cart1wood3_low_016": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_016.mesh"
+},
+"Root Scene_cart1wood3_low_017": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_017.mesh"
+},
+"Root Scene_cart1wood3_low_018": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_018.mesh"
+},
+"Root Scene_cart1wood3_low_019": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_019.mesh"
+},
+"Root Scene_cart1wood3_low_020": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_020.mesh"
+},
+"Root Scene_cart1wood3_low_021": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_021.mesh"
+},
+"Root Scene_cart1wood3_low_022": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_022.mesh"
+},
+"Root Scene_cart1wood3_low_023": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_023.mesh"
+},
+"Root Scene_cart1wood4_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood4_low.mesh"
+},
+"Root Scene_cart1wood5_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood5_low.mesh"
+},
+"Root Scene_cart1wood6_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood6_low.mesh"
+},
+"Root Scene_cart1wood7_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood7_low.mesh"
+},
+"Root Scene_cart1wood8_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood8_low.mesh"
+},
+"Root Scene_cart1wood9_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood9_low.mesh"
+},
+"Root Scene_cart1wood9_low_001": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood9_low_001.mesh"
+},
+"cart1metal10_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal10_low.mesh"
+},
+"cart1metal10_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal10_low_001.mesh"
+},
+"cart1metal11_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal11_low.mesh"
+},
+"cart1metal12_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal12_low.mesh"
+},
+"cart1metal13_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal13_low.mesh"
+},
+"cart1metal14_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal14_low.mesh"
+},
+"cart1metal14_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal14_low_001.mesh"
+},
+"cart1metal14_low_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal14_low_002.mesh"
+},
+"cart1metal1_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal1_low.mesh"
+},
+"cart1metal1_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal1_low_001.mesh"
+},
+"cart1metal1_low_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal1_low_002.mesh"
+},
+"cart1metal1_low_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal1_low_003.mesh"
+},
+"cart1metal2_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal2_low.mesh"
+},
+"cart1metal2_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal2_low_001.mesh"
+},
+"cart1metal2_low_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal2_low_002.mesh"
+},
+"cart1metal2_low_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal2_low_003.mesh"
+},
+"cart1metal2_low_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal2_low_004.mesh"
+},
+"cart1metal2_low_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal2_low_005.mesh"
+},
+"cart1metal3_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low.mesh"
+},
+"cart1metal3_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_001.mesh"
+},
+"cart1metal3_low_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_002.mesh"
+},
+"cart1metal3_low_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_003.mesh"
+},
+"cart1metal3_low_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_004.mesh"
+},
+"cart1metal3_low_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_005.mesh"
+},
+"cart1metal3_low_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_006.mesh"
+},
+"cart1metal3_low_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal3_low_007.mesh"
+},
+"cart1metal4_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal4_low.mesh"
+},
+"cart1metal5_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal5_low.mesh"
+},
+"cart1metal6_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal6_low.mesh"
+},
+"cart1metal6_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal6_low_001.mesh"
+},
+"cart1metal6_low_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal6_low_002.mesh"
+},
+"cart1metal6_low_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal6_low_003.mesh"
+},
+"cart1metal7_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal7_low.mesh"
+},
+"cart1metal7_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal7_low_001.mesh"
+},
+"cart1metal8_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal8_low.mesh"
+},
+"cart1metal8_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal8_low_001.mesh"
+},
+"cart1metal9_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal9_low.mesh"
+},
+"cart1metal9_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1metal9_low_001.mesh"
+},
+"cart1wood10_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood10_low.mesh"
+},
+"cart1wood10_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood10_low_001.mesh"
+},
+"cart1wood11_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood11_low.mesh"
+},
+"cart1wood11_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood11_low_001.mesh"
+},
+"cart1wood12_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood12_low.mesh"
+},
+"cart1wood13_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood13_low.mesh"
+},
+"cart1wood14_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood14_low.mesh"
+},
+"cart1wood15_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood15_low.mesh"
+},
+"cart1wood16_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood16_low.mesh"
+},
+"cart1wood17_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood17_low.mesh"
+},
+"cart1wood1_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood1_low.mesh"
+},
+"cart1wood2_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood2_low.mesh"
+},
+"cart1wood3_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low.mesh"
+},
+"cart1wood3_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_001.mesh"
+},
+"cart1wood3_low_002": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_002.mesh"
+},
+"cart1wood3_low_003": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_003.mesh"
+},
+"cart1wood3_low_004": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_004.mesh"
+},
+"cart1wood3_low_005": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_005.mesh"
+},
+"cart1wood3_low_006": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_006.mesh"
+},
+"cart1wood3_low_007": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_007.mesh"
+},
+"cart1wood3_low_008": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_008.mesh"
+},
+"cart1wood3_low_009": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_009.mesh"
+},
+"cart1wood3_low_010": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_010.mesh"
+},
+"cart1wood3_low_011": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_011.mesh"
+},
+"cart1wood3_low_012": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_012.mesh"
+},
+"cart1wood3_low_013": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_013.mesh"
+},
+"cart1wood3_low_014": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_014.mesh"
+},
+"cart1wood3_low_015": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_015.mesh"
+},
+"cart1wood3_low_016": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_016.mesh"
+},
+"cart1wood3_low_017": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_017.mesh"
+},
+"cart1wood3_low_018": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_018.mesh"
+},
+"cart1wood3_low_019": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_019.mesh"
+},
+"cart1wood3_low_020": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_020.mesh"
+},
+"cart1wood3_low_021": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_021.mesh"
+},
+"cart1wood3_low_022": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_022.mesh"
+},
+"cart1wood3_low_023": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood3_low_023.mesh"
+},
+"cart1wood4_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood4_low.mesh"
+},
+"cart1wood5_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood5_low.mesh"
+},
+"cart1wood6_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood6_low.mesh"
+},
+"cart1wood7_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood7_low.mesh"
+},
+"cart1wood8_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood8_low.mesh"
+},
+"cart1wood9_low": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood9_low.mesh"
+},
+"cart1wood9_low_001": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/cart/extracted/cart1_low.cart1wood9_low_001.mesh"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277778,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

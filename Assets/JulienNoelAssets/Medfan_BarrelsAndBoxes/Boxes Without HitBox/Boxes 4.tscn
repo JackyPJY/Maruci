@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://0qu13dtmarre"]
+
+[ext_resource type="PackedScene" uid="uid://dlikkvveij8n2" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Prefabs/Medfan_RectBox.prefab.scn" id="1_7qbvd"]
+[ext_resource type="PackedScene" uid="uid://cnukx0im0xrnp" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Prefabs/Medfan_SquareBox.prefab.scn" id="2_y718o"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Medfan_RectBox2" parent="." instance=ExtResource("1_7qbvd")]
+transform = Transform3D(0.5, 3.78552e-08, -0.866025, 0.866025, -2.18557e-08, 0.5, 2.11758e-22, -1, -4.37114e-08, -0.99, 0.42, -0.377)
+
+[node name="Medfan_RectBox3" parent="." instance=ExtResource("1_7qbvd")]
+transform = Transform3D(-0.173648, 0.984807, 4.30473e-08, 1.60993e-15, -4.37114e-08, 1, 0.984807, 0.173648, 7.5904e-09, -1.5, -0.03, -1.307)
+
+[node name="Medfan_SquareBox2" parent="." instance=ExtResource("2_y718o")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -0.39, 0.36, -0.79)
+
+[node name="Medfan_SquareBox3" parent="." instance=ExtResource("2_y718o")]
+transform = Transform3D(-0.742404, 0.346189, 0.573576, 0.519837, -0.242404, 0.819152, 0.422618, 0.906308, 6.07727e-08, -0.81, 0.24, -1.66)

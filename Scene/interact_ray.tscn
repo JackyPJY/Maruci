@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://bel4er2u8a3wr"]
+
+[ext_resource type="Script" path="res://Scripts/interact_ray.gd" id="1_6pu8t"]
+[ext_resource type="Texture2D" uid="uid://cu7s4un3ndyei" path="res://Assets/Icon/Hand_inverted.png" id="1_ph6n4"]
+[ext_resource type="FontFile" uid="uid://1ua6mst1mq26" path="res://Assets/Text Font/PerditionBold-z8ZY1.ttf" id="3_n8lq3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cdkhg"]
+
+[node name="InteractRay" type="RayCast3D"]
+target_position = Vector3(0, 0, -2)
+debug_shape_thickness = 5
+script = ExtResource("1_6pu8t")
+
+[node name="Hand" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_cdkhg")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -51.0
+offset_right = 23.0
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ph6n4")
+expand_mode = 1
+
+[node name="Prompt" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.0
+offset_top = 82.0
+offset_right = 29.0
+offset_bottom = 132.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_n8lq3")
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1rt2klbgnclw"]
+
+[ext_resource type="PackedScene" uid="uid://div3q4vjm7qca" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Big Boxes 5.tscn" id="1_2yley"]
+[ext_resource type="PackedScene" uid="uid://b80nxfn36dmps" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Big Boxes 2.tscn" id="2_aakih"]
+[ext_resource type="PackedScene" uid="uid://b8nk7qbbmq5xt" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Big Boxes 3.tscn" id="3_hbeow"]
+[ext_resource type="PackedScene" uid="uid://c1ig24ngahthv" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes Without HitBox/Boxes.tscn" id="4_6s8j7"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D266" parent="." instance=ExtResource("1_2yley")]
+transform = Transform3D(-0.766044, 0, -0.642788, 0, 1, 0, 0.642788, 0, -0.766044, 0.9393, 0, 0.089798)
+
+[node name="Node3D254" parent="." instance=ExtResource("2_aakih")]
+transform = Transform3D(0.642788, 0, -0.766045, 0, 1, 0, 0.766045, 0, 0.642788, -0.38015, 0, -1.3166)
+
+[node name="Node3D261" parent="." instance=ExtResource("3_hbeow")]
+transform = Transform3D(0.642788, 0, -0.766045, 0, 1, 0, 0.766045, 0, 0.642788, 2.2054, 0, 0.364502)
+
+[node name="Node3D262" parent="." instance=ExtResource("4_6s8j7")]
+transform = Transform3D(0.642788, 0, -0.766045, 0, 1, 0, 0.766045, 0, 0.642788, -2.86367, 1.64325, 0.701996)

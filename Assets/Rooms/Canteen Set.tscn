@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://5f5b1fdh6sfr"]
+
+[ext_resource type="PackedScene" uid="uid://bysrmdi6apv44" path="res://Assets/Medieval props/Prefabs/BenchV1.prefab.scn" id="1_rmye0"]
+[ext_resource type="PackedScene" uid="uid://gw43mpgc38j0" path="res://Assets/Medieval props/Prefabs/TableV1.prefab.scn" id="2_2pk6e"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="BenchV1" parent="." instance=ExtResource("1_rmye0")]
+transform = Transform3D(-2.05126e-08, -1.18698e-08, -0.307169, -0.172072, -1.18698e-08, 3.66174e-08, -7.52152e-09, 0.271548, -1.34268e-08, -4.58372, 0.00373542, -0.278047)
+
+[node name="BenchV2" parent="." instance=ExtResource("1_rmye0")]
+transform = Transform3D(-2.05126e-08, -1.18698e-08, -0.307169, -0.172072, -1.18698e-08, 3.66174e-08, -7.52152e-09, 0.271548, -1.34268e-08, -4.58372, 0.00373542, -2.07751)
+
+[node name="TableV1" parent="." instance=ExtResource("2_2pk6e")]
+transform = Transform3D(-0.327395, 1.14862e-08, 5.45595e-16, 0, -5.74312e-09, 0.142775, 2.86218e-08, 0.131387, 6.24087e-09, -0.624593, 0.000499964, -1.22021)

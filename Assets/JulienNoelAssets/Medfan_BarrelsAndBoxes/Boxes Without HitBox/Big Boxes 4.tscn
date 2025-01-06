@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2ckxe1ej3t7m"]
+
+[ext_resource type="PackedScene" uid="uid://biqpxutmbhibd" path="res://Assets/Medieval props/Prefabs/BoxV1.prefab.scn" id="1_omodi"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="BoxV1" parent="." instance=ExtResource("1_omodi")]
+transform = Transform3D(-0.791743, 6.92164e-08, 2.90452e-15, -3.35316e-22, -3.46082e-08, 0.760074, 6.92164e-08, 0.791743, 3.32239e-08, -0.71933, -0.00200003, 0.742666)
+
+[node name="BoxV2" parent="." instance=ExtResource("1_omodi")]
+transform = Transform3D(-0.791743, 6.92164e-08, 2.90452e-15, -3.35316e-22, -3.46082e-08, 0.760074, 6.92164e-08, 0.791743, 3.32239e-08, -2.16933, -0.00200003, 0.742666)
+
+[node name="BoxV3" parent="." instance=ExtResource("1_omodi")]
+transform = Transform3D(-0.791743, 6.92164e-08, 2.90452e-15, -3.35316e-22, -3.46082e-08, 0.760074, 6.92164e-08, 0.791743, 3.32239e-08, -0.71933, -0.00200003, 2.19267)
+
+[node name="BoxV4" parent="." instance=ExtResource("1_omodi")]
+transform = Transform3D(-0.791743, 6.92164e-08, 2.90452e-15, -3.35316e-22, -3.46082e-08, 0.760074, 6.92164e-08, 0.791743, 3.32239e-08, -2.16933, -0.00200003, 2.19267)
+
+[node name="BoxV6" parent="." instance=ExtResource("1_omodi")]
+transform = Transform3D(-0.791743, 6.92164e-08, 2.90452e-15, -3.35316e-22, -3.46082e-08, 0.760074, 6.92164e-08, 0.791743, 3.32239e-08, -2.16933, 1.598, 0.742666)
+
+[node name="BoxV7" parent="." instance=ExtResource("1_omodi")]
+transform = Transform3D(-0.791743, 6.92164e-08, 2.90452e-15, -3.35316e-22, -3.46082e-08, 0.760074, 6.92164e-08, 0.791743, 3.32239e-08, -0.71933, 1.598, 2.19267)
+
+[node name="BoxV8" parent="." instance=ExtResource("1_omodi")]
+transform = Transform3D(-0.791743, 6.92164e-08, 2.90452e-15, -3.35316e-22, -3.46082e-08, 0.760074, 6.92164e-08, 0.791743, 3.32239e-08, -2.16933, 1.598, 2.19267)

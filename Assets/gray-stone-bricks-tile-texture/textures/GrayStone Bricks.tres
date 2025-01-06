@@ -1,0 +1,27 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://dhchjf8sql6b5"]
+
+[ext_resource type="Texture2D" uid="uid://dgj4rjg4do3l7" path="res://Assets/gray-stone-bricks-tile-texture/textures/GrayStoneBricks_basecolor.png" id="1_o2gb6"]
+[ext_resource type="Texture2D" uid="uid://cylp2cdcu5igo" path="res://Assets/gray-stone-bricks-tile-texture/textures/GrayStoneBricks_ambientOcclusion.png" id="2_ywuo1"]
+[ext_resource type="Texture2D" uid="uid://cgl6w6ob5mrhd" path="res://Assets/gray-stone-bricks-tile-texture/textures/GrayStoneBricks_metallic.png" id="4_6cga3"]
+[ext_resource type="Texture2D" uid="uid://ct5lpg3m0g6o8" path="res://Assets/gray-stone-bricks-tile-texture/textures/GrayStoneBricks_normal.png" id="5_h0a6g"]
+[ext_resource type="Texture2D" uid="uid://divnx3a7ec43b" path="res://Assets/gray-stone-bricks-tile-texture/textures/GrayStoneBricks_roughness.png" id="6_vgk3c"]
+
+[resource]
+albedo_texture = ExtResource("1_o2gb6")
+metallic = 1.0
+metallic_texture = ExtResource("4_6cga3")
+roughness_texture = ExtResource("6_vgk3c")
+normal_enabled = true
+normal_texture = ExtResource("5_h0a6g")
+ao_enabled = true
+ao_texture = ExtResource("2_ywuo1")
+heightmap_enabled = true
+backlight = Color(0.501407, 0.501406, 0.501406, 1)
+uv1_triplanar = true
+uv1_world_triplanar = true
+uv2_triplanar_sharpness = 0.0384732
+uv2_world_triplanar = true
+texture_filter = 2
+grow_amount = -0.667
+point_size = 128.0
+proximity_fade_distance = 10.1

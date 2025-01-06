@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbpvsvbh6anyt"]
+
+[ext_resource type="PackedScene" uid="uid://bbjr1gha6gcxp" path="res://Assets/Medieval props/Prefabs/Shelf.tscn" id="1_3fk3s"]
+[ext_resource type="PackedScene" uid="uid://yeml6j4wgxx5" path="res://Assets/Medieval props/Prefabs/Candle Stand Lit.tscn" id="2_kycye"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D7" parent="." instance=ExtResource("1_3fk3s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00580692, 0.372137, 0.00466171)
+
+[node name="Node3D11" parent="." instance=ExtResource("2_kycye")]
+transform = Transform3D(0.39935, 0, 0, 0, 0.529906, 0, 0, 0, 0.411543, 0.0938082, 0.355757, 0.17746)
+
+[node name="Node3D12" parent="." instance=ExtResource("2_kycye")]
+transform = Transform3D(0.39935, 0, 0, 0, 0.529906, 0, 0, 0, 0.411543, 0.731606, 0.355757, 0.17746)

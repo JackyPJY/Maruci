@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsu657r1gpfat"]
+
+[ext_resource type="Material" uid="uid://bd7n8bcjg2voj" path="res://Assets/stone-house-siding-bl/Stone Brick.tres" id="1_dpewn"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Wall4" type="CSGBox3D" parent="."]
+transform = Transform3D(1.74846e-06, -20, 1.1365e-06, -2.62268e-06, -8.74228e-07, -26, 20, 1.74846e-06, -3.40948e-06, 4.51179, 3.26008, 0.119304)
+material_override = ExtResource("1_dpewn")
+use_collision = true
+size = Vector3(0.01, 0.45, 0.25)
+
+[node name="Wall5" type="CSGBox3D" parent="."]
+transform = Transform3D(1.74846e-06, -20, 1.1365e-06, -2.62268e-06, -8.74228e-07, -26, 20, 1.74846e-06, -3.40948e-06, 16.044, 3.26016, 0.119)
+material_override = ExtResource("1_dpewn")
+use_collision = true
+size = Vector3(0.01, 0.45, 0.25)
+
+[node name="Wall7" type="CSGBox3D" parent="."]
+transform = Transform3D(1.50996e-06, -20, 8.74228e-07, 0, -8.74228e-07, -20, 20, 1.50996e-06, -6.60024e-14, 10.4437, 5.0531, 0.119304)
+material_override = ExtResource("1_dpewn")
+use_collision = true
+size = Vector3(0.01, 0.25, 0.15)
+
+[node name="Wall10" type="CSGBox3D" parent="."]
+transform = Transform3D(20, -4.19629e-07, -2.273e-06, 1.74846e-06, -2.09815e-07, 26, -1.74846e-06, -4.8, -1.1365e-06, 0.100292, 3.25719, 2.469)
+material_override = ExtResource("1_dpewn")
+use_collision = true
+size = Vector3(0.01, 1, 0.25)
+
+[node name="Wall11" type="CSGBox3D" parent="."]
+transform = Transform3D(-20, 4.19629e-07, 4.54598e-06, 3.49691e-06, -2.09815e-07, 26, 1.74846e-06, 4.8, 1.1365e-06, 20.444, 3.26016, 2.419)
+material_override = ExtResource("1_dpewn")
+snap = 1e-06
+use_collision = true
+size = Vector3(0.01, 1, 0.25)

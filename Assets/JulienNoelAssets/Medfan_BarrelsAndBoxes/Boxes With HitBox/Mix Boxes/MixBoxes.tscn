@@ -1,0 +1,35 @@
+[gd_scene load_steps=8 format=3 uid="uid://brj0jg7bin3ec"]
+
+[ext_resource type="PackedScene" uid="uid://raytuj5ky3ac" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Big Boxes 4.tscn" id="1_crmdw"]
+[ext_resource type="PackedScene" uid="uid://b80nxfn36dmps" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Big Boxes 2.tscn" id="2_phgw8"]
+[ext_resource type="PackedScene" uid="uid://cy0punx2ts6uq" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Boxes 5.tscn" id="3_mtfry"]
+[ext_resource type="PackedScene" uid="uid://b8f1y5676owtg" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Boxes.tscn" id="4_tp37h"]
+[ext_resource type="PackedScene" uid="uid://s67n6te4sktp" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Boxes 2.tscn" id="5_pgyyt"]
+[ext_resource type="PackedScene" uid="uid://fhdv7fmracnw" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Boxes 4.tscn" id="6_mdqbo"]
+[ext_resource type="PackedScene" uid="uid://du7gcqjdcd4al" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Big Boxes.tscn" id="7_ef5wc"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D252" parent="." instance=ExtResource("1_crmdw")]
+transform = Transform3D(0.173649, 0, -0.984808, 0, 1, 0, 0.984808, 0, 0.173649, 1.01945, 0.00257498, 2.0184)
+
+[node name="Node3D253" parent="." instance=ExtResource("2_phgw8")]
+transform = Transform3D(-0.173649, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173649, -0.440385, 0, 2.2575)
+
+[node name="Node3D255" parent="." instance=ExtResource("3_mtfry")]
+transform = Transform3D(-0.819152, 0, 0.573577, 0, 1, 0, -0.573577, 0, -0.819152, 0.422789, 0, -1.5211)
+
+[node name="Node3D256" parent="." instance=ExtResource("4_tp37h")]
+transform = Transform3D(-0.173649, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173649, 2.52167, 0, -1.3555)
+
+[node name="Node3D257" parent="." instance=ExtResource("5_pgyyt")]
+transform = Transform3D(0.422618, 0, 0.906308, 0, 1, 0, -0.906308, 0, 0.422618, 3.00467, 0, 0.499503)
+
+[node name="Node3D258" parent="." instance=ExtResource("5_pgyyt")]
+transform = Transform3D(-0.766045, 0, -0.642788, 0, 1, 0, 0.642788, 0, -0.766045, -3.36423, 0, -1.1176)
+
+[node name="Node3D259" parent="." instance=ExtResource("6_mdqbo")]
+transform = Transform3D(-0.173649, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173649, -2.3448, 0, -0.231095)
+
+[node name="Node3D260" parent="." instance=ExtResource("7_ef5wc")]
+transform = Transform3D(-0.984808, 0, -0.173649, 0, 1, 0, 0.173649, 0, -0.984808, -0.93402, 0, -0.581696)

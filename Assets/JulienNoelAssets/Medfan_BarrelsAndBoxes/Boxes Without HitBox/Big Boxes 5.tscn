@@ -1,0 +1,72 @@
+[gd_scene load_steps=9 format=3 uid="uid://cmvcar6y7ied0"]
+
+[ext_resource type="PackedScene" uid="uid://biqpxutmbhibd" path="res://Assets/Medieval props/Prefabs/BoxV1.prefab.scn" id="1_yglc8"]
+[ext_resource type="PackedScene" uid="uid://dlikkvveij8n2" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Prefabs/Medfan_RectBox.prefab.scn" id="2_eb0jl"]
+[ext_resource type="PackedScene" uid="uid://cnukx0im0xrnp" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Prefabs/Medfan_SquareBox.prefab.scn" id="3_vfgej"]
+[ext_resource type="PackedScene" uid="uid://c5gkskg72buqs" path="res://Assets/small-rocks/Scene/smallrocks 1.tscn" id="4_q1jcy"]
+[ext_resource type="PackedScene" uid="uid://c6tabfw3vhe78" path="res://Assets/small-rocks/Scene/smallrocks 2.tscn" id="5_dicx6"]
+[ext_resource type="PackedScene" uid="uid://dhehncnj727j7" path="res://Assets/small-rocks/Scene/smallrocks 4.tscn" id="6_e4paf"]
+[ext_resource type="PackedScene" uid="uid://cgty03d6qglcj" path="res://Assets/small-rocks/Scene/smallrocks 5.tscn" id="7_yon78"]
+[ext_resource type="PackedScene" uid="uid://cb33xnw5bysmr" path="res://Assets/small-rocks/Scene/smallrocks 3.tscn" id="8_1db6c"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="BoxV2" parent="." instance=ExtResource("1_yglc8")]
+transform = Transform3D(-0.791743, 6.92164e-08, 2.90452e-15, 0, -3.46082e-08, 0.760074, 6.92164e-08, 0.791743, 3.32239e-08, -0.72, 0, 0.719)
+
+[node name="Medfan_RectBox6" parent="." instance=ExtResource("2_eb0jl")]
+transform = Transform3D(-0.850002, 6.63501e-08, 2.75956e-15, -3.21904e-22, -3.31751e-08, 0.72214, 7.43096e-08, 0.758957, 3.15658e-08, -0.622014, 0.0177482, 2.17879)
+
+[node name="Medfan_RectBox8" parent="." instance=ExtResource("2_eb0jl")]
+transform = Transform3D(-0.344744, 0.536664, -0.418284, -0.696281, 3.53224e-08, 0.414203, 0.344744, 0.536663, 0.418284, -1.55525, 0.338943, 1.65911)
+
+[node name="Medfan_RectBox7" parent="." instance=ExtResource("2_eb0jl")]
+transform = Transform3D(-0.425001, 4.44463e-09, 0.625392, 0.736123, -7.40484e-08, 0.36107, 7.43095e-08, 0.758957, 3.15658e-08, -0.604139, 1.96859, 1.07261)
+
+[node name="Medfan_SquareBox4" parent="." instance=ExtResource("3_vfgej")]
+transform = Transform3D(2.74008e-08, 5.67917e-08, -0.626857, 7.06422e-08, 0.72214, 4.54334e-08, 0.626858, -9.09879e-08, 2.74008e-08, -0.719, 0.27215, 1.719)
+
+[node name="Medfan_SquareBox7" parent="." instance=ExtResource("3_vfgej")]
+transform = Transform3D(2.74008e-08, 5.67917e-08, -0.626857, 7.06422e-08, 0.72214, 4.54334e-08, 0.626858, -9.09879e-08, 2.74008e-08, -0.719, 0.82215, 1.719)
+
+[node name="Medfan_SquareBox8" parent="." instance=ExtResource("3_vfgej")]
+transform = Transform3D(2.74008e-08, 5.67917e-08, -0.626857, 7.06422e-08, 0.72214, 4.54334e-08, 0.626858, -9.09879e-08, 2.74008e-08, -0.219, 0.27215, 1.719)
+
+[node name="Medfan_SquareBox9" parent="." instance=ExtResource("3_vfgej")]
+transform = Transform3D(-1.23825e-08, -0.522597, -0.432618, -0.626858, 5.94221e-08, -2.74008e-08, 4.96719e-08, 0.498376, -0.453643, -0.736327, 0.25212, 2.91403)
+
+[node name="Medfan_SquareBox5" parent="." instance=ExtResource("3_vfgej")]
+transform = Transform3D(2.74008e-08, 5.67917e-08, -0.626857, 7.06422e-08, 0.72214, 4.54334e-08, 0.626858, -9.09879e-08, 2.74008e-08, -0.719, 1.89155, 1.019)
+
+[node name="Medfan_SquareBox6" parent="." instance=ExtResource("3_vfgej")]
+transform = Transform3D(0.443256, -2.41803e-08, -0.443255, 7.06422e-08, 0.72214, 4.54334e-08, 0.443256, -1.04496e-07, 0.443255, -0.219, 1.89155, 0.319)
+
+[node name="smallrock3" parent="." instance=ExtResource("4_q1jcy")]
+transform = Transform3D(0.642788, 0, -0.766044, 0, 1, 0, 0.766044, 0, 0.642788, -1, 1.63965, 0.5)
+
+[node name="smallrock4" parent="." instance=ExtResource("4_q1jcy")]
+transform = Transform3D(0.642264, -0.014491, -0.766346, -0.628556, 0.56223, -0.537415, 0.43865, 0.826854, 0.351992, -1.92761, 0.0547211, 0.223716)
+
+[node name="smallrock5" parent="." instance=ExtResource("5_dicx6")]
+transform = Transform3D(0.26775, 0, 0, 0, 0.315, 0, 0, 0, 0.26, -0.880591, 0.462447, 2.25)
+
+[node name="smallrock2" parent="." instance=ExtResource("6_e4paf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.24849, 0.14, 0.340869)
+
+[node name="smallrock1" parent="." instance=ExtResource("7_yon78")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.21354, 0.0808826, 1.31827)
+
+[node name="smallrock6" parent="." instance=ExtResource("5_dicx6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.69365, 0.154673, 0.683988)
+
+[node name="smallrock7" parent="." instance=ExtResource("7_yon78")]
+transform = Transform3D(0.459466, 0, 0, 0, 0.385679, 0, 0, 0, 0.517226, -2.62129, 0.0393133, 2.17126)
+
+[node name="smallrock8" parent="." instance=ExtResource("4_q1jcy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.47735, 0.0548718, 1.60117)
+
+[node name="smallrock9" parent="." instance=ExtResource("7_yon78")]
+transform = Transform3D(-0.156178, -0.730088, -0.665267, 0.310984, 0.602932, -0.734685, 0.937496, -0.321629, 0.132881, -1.59726, 0.0354358, 2.3415)
+
+[node name="smallrock10" parent="." instance=ExtResource("8_1db6c")]
+transform = Transform3D(0.52882, 0, 0, 0, 0.187235, 0, 0, 0, 0.375785, -2.78597, -0.0082605, 1.0865)

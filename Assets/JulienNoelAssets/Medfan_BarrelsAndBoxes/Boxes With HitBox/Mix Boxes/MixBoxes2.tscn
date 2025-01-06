@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://brld6gptbshda"]
+
+[ext_resource type="PackedScene" uid="uid://du7gcqjdcd4al" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Big Boxes.tscn" id="1_4tlww"]
+[ext_resource type="PackedScene" uid="uid://div3q4vjm7qca" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Big Boxes 5.tscn" id="2_03tu0"]
+[ext_resource type="PackedScene" uid="uid://b8nk7qbbmq5xt" path="res://Assets/JulienNoelAssets/Medfan_BarrelsAndBoxes/Boxes With HitBox/HB Big Boxes 3.tscn" id="3_65ti1"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node3D263" parent="." instance=ExtResource("1_4tlww")]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, -1.96327, 0, 0.0371991)
+
+[node name="Node3D264" parent="." instance=ExtResource("2_03tu0")]
+transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, -0.30263, 0, -0.286501)
+
+[node name="Node3D265" parent="." instance=ExtResource("3_65ti1")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 2.2361, 0, 0.210798)

@@ -1,0 +1,107 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bjoogeflhocxl"
+path="res://.godot/imported/DoorMedieval.fbx-edd7365b2872606685a36a639492f1bf.scn"
+
+[deps]
+
+source_file="res://Assets/medieval-door-pack/source/DoorMedieval.fbx"
+dest_files=["res://.godot/imported/DoorMedieval.fbx-edd7365b2872606685a36a639492f1bf.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=true
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"DefaultMaterial": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/medieval-door-pack/Door Castle.tres"
+},
+"DoorCave": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/medieval-door-pack/Door Cave.tres"
+},
+"DoorMain": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/medieval-door-pack/Door Main.tres"
+},
+"DoorOneSide": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/medieval-door-pack/Door Main.tres"
+},
+"DoorSimple": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/medieval-door-pack/Door Cave.tres"
+}
+},
+"meshes": {
+"Root Scene_DoorCave_MainDoor": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Assets/medieval-door-pack/Individuals/Door Cave.tres"
+},
+"Root Scene_DoorEntrance": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Assets/medieval-door-pack/Individuals/Door Castle.tres"
+},
+"Root Scene_DoorMain": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Assets/medieval-door-pack/Individuals/Door Main.tres"
+},
+"Root Scene_DoorOneSide": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Assets/medieval-door-pack/Individuals/Door One-Side.tres"
+},
+"Root Scene_DoorSimple": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://Assets/medieval-door-pack/Individuals/Door Simple.tres"
+}
+}
+}
+fbx/importer=1
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

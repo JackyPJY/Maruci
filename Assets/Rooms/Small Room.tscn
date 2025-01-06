@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://p7s4wty5vaxw"]
+
+[ext_resource type="Material" uid="uid://dhchjf8sql6b5" path="res://Assets/gray-stone-bricks-tile-texture/textures/GrayStone Bricks.tres" id="1_qj2g1"]
+[ext_resource type="PackedScene" uid="uid://bsu657r1gpfat" path="res://Assets/Rooms/Doorway.tscn" id="2_2cbdp"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Wall" type="CSGBox3D" parent="."]
+transform = Transform3D(-20, 0, 1.74846e-06, 1.74846e-06, -8.74228e-07, 20, 7.64274e-14, 20, 8.74228e-07, 20.119, 2.53819, 10.5973)
+material_override = ExtResource("1_qj2g1")
+use_collision = true
+size = Vector3(0.05, 1, 0.25)
+
+[node name="Wall4" type="CSGBox3D" parent="."]
+transform = Transform3D(-1.14641e-13, -20, -8.74228e-07, 2.62268e-06, -8.74228e-07, 20, -20, 0, 2.62268e-06, 10.619, 2.53819, 20.5973)
+material_override = ExtResource("1_qj2g1")
+use_collision = true
+size = Vector3(0.05, 1, 0.25)
+
+[node name="Wall5" type="CSGBox3D" parent="."]
+transform = Transform3D(20, 0, -3.49691e-06, 3.49691e-06, -8.74228e-07, 20, -1.52855e-13, -20, -8.74228e-07, 0.575528, 2.53819, 10.5973)
+material_override = ExtResource("1_qj2g1")
+snap = 1e-06
+use_collision = true
+size = Vector3(0.05, 1, 0.25)
+
+[node name="Node3D" parent="." instance=ExtResource("2_2cbdp")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20.6154, 0, 1.08716)

@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://yeml6j4wgxx5"]
+
+[ext_resource type="PackedScene" uid="uid://can5o5f6hkvad" path="res://Assets/Medieval props/Prefabs/CandleV3 Lit.prefab.scn" id="1_v6msk"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(0.39935, 0, 0, 0, 0.529906, 0, 0, 0, 0.411543, 0, 0, 0)
+
+[node name="Node3D" parent="." instance=ExtResource("1_v6msk")]
+transform = Transform3D(2.50407, 0, 0, 0, 1.88713, 0, 0, 0, 2.42988, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D"]
+transform = Transform3D(1, 2.2628e-14, 0, -2.2628e-14, 1, 0, 0, 0, 1, 0.00243497, 0.653729, -0.000526484)
+light_color = Color(1, 0.870588, 0.521569, 1)
+light_energy = 0.842
+light_bake_mode = 1
+shadow_enabled = true
+shadow_opacity = 0.74
+distance_fade_enabled = true
+distance_fade_length = 36.55
+omni_range = 0.896052

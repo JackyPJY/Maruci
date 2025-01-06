@@ -1,0 +1,850 @@
+[gd_scene load_steps=35 format=3 uid="uid://bhqv4wpeajhwu"]
+
+[ext_resource type="Material" uid="uid://bd7n8bcjg2voj" path="res://Assets/stone-house-siding-bl/Stone Brick.tres" id="1_d6ao5"]
+[ext_resource type="Material" uid="uid://dxeqs36gf571k" path="res://Assets/small-rocks/Stone Texture.tres" id="2_1qxsc"]
+[ext_resource type="PackedScene" uid="uid://bsu657r1gpfat" path="res://Assets/Rooms/Doorway.tscn" id="3_rkleb"]
+[ext_resource type="PackedScene" uid="uid://cxrp0rrnc2x8n" path="res://Assets/Medieval props/Prefabs/TableV3.prefab.scn" id="4_eqjeu"]
+[ext_resource type="PackedScene" uid="uid://gjk6ufe4k3xy" path="res://Assets/Medieval props/Prefabs/SackV1.prefab.scn" id="5_ptodb"]
+[ext_resource type="PackedScene" uid="uid://dufnptkmg6bcp" path="res://Assets/Medieval props/Prefabs/FirePlaceV1.prefab.scn" id="6_31n0q"]
+[ext_resource type="PackedScene" uid="uid://uhg6sf6rt3kg" path="res://Assets/Medieval props/Prefabs/PotV2.prefab.scn" id="7_gex5n"]
+[ext_resource type="PackedScene" uid="uid://diqom5e6a56e" path="res://Assets/Medieval props/Prefabs/BottleV2.prefab.scn" id="8_w6rfs"]
+[ext_resource type="PackedScene" uid="uid://bdl5mwkt5t0wi" path="res://Assets/Medieval props/Prefabs/BottleV1.prefab.scn" id="9_ihxjd"]
+[ext_resource type="PackedScene" uid="uid://bokwb8rroqcwy" path="res://Assets/Medieval props/Prefabs/BookV2.prefab.scn" id="10_ccq1v"]
+[ext_resource type="PackedScene" uid="uid://deohscvsd8uq3" path="res://Assets/Medieval props/Prefabs/BookV1.prefab.scn" id="11_pf66x"]
+[ext_resource type="PackedScene" uid="uid://duxnr3ec4dsyq" path="res://Assets/Medieval props/Prefabs/LanternV1.prefab.scn" id="12_h3d47"]
+[ext_resource type="PackedScene" uid="uid://bqary8b3gui8u" path="res://Assets/Medieval props/Prefabs/PileOfWoodV2.prefab.scn" id="13_rn0dd"]
+[ext_resource type="PackedScene" uid="uid://biqw43vjp7vho" path="res://Assets/Medieval props/Prefabs/PotV1.prefab.scn" id="14_4i0sb"]
+[ext_resource type="PackedScene" uid="uid://bbjr1gha6gcxp" path="res://Assets/Medieval props/Prefabs/Shelf.tscn" id="15_g184j"]
+[ext_resource type="PackedScene" uid="uid://cwoj2gvn4uvlr" path="res://Assets/Medieval props/Prefabs/BigSpoon.prefab.scn" id="16_nnkhw"]
+[ext_resource type="PackedScene" uid="uid://5hxvnt0l3u61" path="res://Assets/Medieval props/Prefabs/KnifeV1.prefab.scn" id="17_q1o53"]
+[ext_resource type="PackedScene" uid="uid://dd2kogeuwsx6x" path="res://Assets/Medieval props/Prefabs/MugV2.prefab.scn" id="18_n2c1s"]
+[ext_resource type="PackedScene" uid="uid://csaivangfmmy8" path="res://Assets/Medieval props/Prefabs/MugV1.prefab.scn" id="19_rwbo4"]
+[ext_resource type="PackedScene" uid="uid://cb62gnto6xxp4" path="res://Assets/Medieval props/Prefabs/Spoon.prefab.scn" id="20_jxskb"]
+[ext_resource type="PackedScene" uid="uid://bwmfca08et2sb" path="res://Assets/Medieval props/Prefabs/PlateV2.prefab.scn" id="21_hf3lc"]
+[ext_resource type="PackedScene" uid="uid://cbemtrjbknetc" path="res://Assets/Medieval props/Prefabs/PlateV1.prefab.scn" id="22_xtaes"]
+[ext_resource type="PackedScene" uid="uid://dxphvj8vb76o0" path="res://Assets/Medieval props/Prefabs/BathtubV1.prefab.scn" id="23_ms7sh"]
+[ext_resource type="PackedScene" uid="uid://4lqcsirprowe" path="res://Assets/Medieval props/Prefabs/BeerBarrelV1.prefab.scn" id="24_k6nk3"]
+[ext_resource type="PackedScene" uid="uid://dhf6bcwha04hc" path="res://Assets/Medieval props/Prefabs/LockerV1.prefab.scn" id="25_tly4a"]
+[ext_resource type="PackedScene" uid="uid://b3brmof52ad48" path="res://Assets/Medieval props/Prefabs/LockerV3.prefab.scn" id="26_en3l4"]
+[ext_resource type="PackedScene" uid="uid://b8ymll3lm5e2s" path="res://Assets/Medieval props/Prefabs/ShelfV1.prefab.scn" id="27_nucqr"]
+[ext_resource type="PackedScene" uid="uid://1cb6qjuqqypk" path="res://Assets/Medieval props/Prefabs/PileOfWoodV1.prefab.scn" id="28_hyrlt"]
+[ext_resource type="PackedScene" uid="uid://yoxubocqp2ox" path="res://Assets/Medieval props/Prefabs/TableV2.prefab.scn" id="29_7drv6"]
+[ext_resource type="PackedScene" uid="uid://c0kbyi1q8q3vo" path="res://Assets/small-rocks/Rock Piles.tscn" id="30_pdcbd"]
+[ext_resource type="PackedScene" uid="uid://bko8pqe55a7it" path="res://Assets/small-rocks/Rock Piles (Rocks Only).tscn" id="31_j4h6g"]
+[ext_resource type="PackedScene" uid="uid://bysrmdi6apv44" path="res://Assets/Medieval props/Prefabs/BenchV1.prefab.scn" id="32_yu4m3"]
+[ext_resource type="PackedScene" uid="uid://gw43mpgc38j0" path="res://Assets/Medieval props/Prefabs/TableV1.prefab.scn" id="33_jmm2f"]
+[ext_resource type="PackedScene" uid="uid://cq2asp8gch6jg" path="res://Assets/small-rocks/Rock Piles 2(Rocks Only).tscn" id="34_8xc0x"]
+
+[node name="Canteen" type="Node3D"]
+
+[node name="Walls" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.7, 0, -11.75)
+
+[node name="Wall" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, 46.2, 4, -92.2)
+material_override = ExtResource("1_d6ao5")
+use_collision = true
+size = Vector3(1.2, 18.5, 0.05)
+material = ExtResource("2_1qxsc")
+
+[node name="Wall3" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, 81.2, 4, 0.0749998)
+material_override = ExtResource("1_d6ao5")
+use_collision = true
+size = Vector3(1.2, 4.5, 0.05)
+material = ExtResource("2_1qxsc")
+
+[node name="Wall5" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, 18.45, 4, 0.0749998)
+material_override = ExtResource("1_d6ao5")
+use_collision = true
+size = Vector3(1.2, 7.4, 0.05)
+material = ExtResource("2_1qxsc")
+
+[node name="Wall2" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(9.55343e-15, -2.18557e-07, 5, -5, -2.18557e-07, 0, 2.18557e-07, -5, -2.18557e-07, 92.3, 4, -46.05)
+material_override = ExtResource("1_d6ao5")
+use_collision = true
+size = Vector3(1.2, 18.5, 0.05)
+material = ExtResource("2_1qxsc")
+
+[node name="Wall7" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(9.55343e-15, -2.18557e-07, 5, -5, -2.18557e-07, 0, 2.18557e-07, -5, -2.18557e-07, 88.31, 4, -58.8)
+material_override = ExtResource("1_d6ao5")
+use_collision = true
+size = Vector3(1.2, 5.6, 0.05)
+material = ExtResource("2_1qxsc")
+
+[node name="Wall4" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(9.55343e-15, -2.18557e-07, 5, -5, -2.18557e-07, 0, 2.18557e-07, -5, -2.18557e-07, 0.0749989, 4, -73.05)
+material_override = ExtResource("1_d6ao5")
+use_collision = true
+size = Vector3(1.2, 7.7, 0.05)
+material = ExtResource("2_1qxsc")
+
+[node name="Wall6" type="CSGBox3D" parent="Walls"]
+transform = Transform3D(9.55343e-15, -2.18557e-07, 5, -5, -2.18557e-07, 0, 2.18557e-07, -5, -2.18557e-07, 0.0750027, 4, -17.3)
+material_override = ExtResource("1_d6ao5")
+use_collision = true
+size = Vector3(1.2, 7, 0.05)
+material = ExtResource("2_1qxsc")
+
+[node name="Kitchen" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.6, 0.446849, -71.02)
+
+[node name="Node3D" type="Node3D" parent="Kitchen"]
+
+[node name="Wall7" type="CSGBox3D" parent="Kitchen/Node3D"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, 36.025, 3.553, 14.47)
+material_override = ExtResource("1_d6ao5")
+use_collision = true
+size = Vector3(1.2, 1.05, 0.05)
+material = ExtResource("2_1qxsc")
+
+[node name="Wall8" type="CSGBox3D" parent="Kitchen/Node3D"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, 36.025, 3.553, 9.92)
+material_override = ExtResource("1_d6ao5")
+use_collision = true
+size = Vector3(1.2, 1.05, 0.05)
+material = ExtResource("2_1qxsc")
+
+[node name="Wall9" type="CSGBox3D" parent="Kitchen/Node3D"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, 8.957, 3.553, 9.923)
+material_override = ExtResource("1_d6ao5")
+use_collision = true
+size = Vector3(1.2, 1.7, 0.05)
+material = ExtResource("2_1qxsc")
+
+[node name="Wall10" type="CSGBox3D" parent="Kitchen/Node3D"]
+transform = Transform3D(9.55343e-15, -2.18557e-07, -5, -5, -2.18557e-07, 0, -2.18557e-07, 5, -2.18557e-07, 4.743, 3.553, -1.726)
+material_override = ExtResource("1_d6ao5")
+use_collision = true
+size = Vector3(1.2, 4.71, 0.05)
+material = ExtResource("2_1qxsc")
+
+[node name="Node3D4" parent="Kitchen" instance=ExtResource("3_rkleb")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -1.90735e-06, 0.50528, -13.3)
+
+[node name="Node3D6" parent="Kitchen" instance=ExtResource("3_rkleb")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 33.551, 0.50528, 14.617)
+
+[node name="TableV3" parent="Kitchen" instance=ExtResource("4_eqjeu")]
+transform = Transform3D(-1.35646e-08, -0.310322, -6.47195e-09, -2.27809e-22, -1.35646e-08, 0.148061, -0.310322, 1.35646e-08, 2.82898e-16, 9.7, 0.55233, -23.43)
+
+[node name="TableV5" parent="Kitchen" instance=ExtResource("4_eqjeu")]
+transform = Transform3D(-1.35646e-08, -0.310322, -6.47195e-09, -2.27809e-22, -1.35646e-08, 0.148061, -0.310322, 1.35646e-08, 2.82898e-16, 12.25, 0.55233, -23.43)
+
+[node name="TableV6" parent="Kitchen" instance=ExtResource("4_eqjeu")]
+transform = Transform3D(-0.106136, -0.291607, -6.08164e-09, -1.79618e-22, -1.35646e-08, 0.148061, -0.291607, 0.106136, 2.21354e-09, 12.95, 0.494942, 2.88499)
+
+[node name="TableV7" parent="Kitchen" instance=ExtResource("4_eqjeu")]
+transform = Transform3D(-1.35646e-08, -0.310322, -6.47195e-09, -2.27809e-22, -1.35646e-08, 0.148061, -0.310322, 1.35646e-08, 2.82898e-16, 18.4, 0.55233, -23.43)
+
+[node name="TableV8" parent="Kitchen" instance=ExtResource("4_eqjeu")]
+transform = Transform3D(-0.305607, -0.0538866, -1.38711e-08, 2.71292e-08, 1.35646e-08, -0.148061, 0.0538866, -0.305607, -4.12596e-09, 19.3367, 1.65707, -17.061)
+
+[node name="TableV13" parent="Kitchen" instance=ExtResource("4_eqjeu")]
+transform = Transform3D(-0.2542, 0.177993, -6.89085e-09, 2.71292e-08, 1.35646e-08, -0.148061, -0.177993, -0.2542, -1.27258e-08, 21.2867, 1.65707, -2.76099)
+
+[node name="TableV9" parent="Kitchen" instance=ExtResource("4_eqjeu")]
+transform = Transform3D(-1.35646e-08, -0.310322, -6.47195e-09, -2.27809e-22, -1.35646e-08, 0.148061, -0.310322, 1.35646e-08, 2.82898e-16, 20.95, 0.494942, -23.43)
+
+[node name="TableV10" parent="Kitchen" instance=ExtResource("4_eqjeu")]
+transform = Transform3D(0.106136, -4.63936e-09, 0.139132, 1.35646e-08, 0.310322, -2.22045e-15, -0.291607, 1.27466e-08, 0.0506398, 19.6133, 1.79199, -13.289)
+
+[node name="TableV14" parent="Kitchen" instance=ExtResource("4_eqjeu")]
+transform = Transform3D(-0.199471, 8.7192e-09, 0.113421, 1.35646e-08, 0.310322, -1.92399e-15, -0.23772, 1.03911e-08, -0.0951719, 11.1133, 1.79199, -11.139)
+
+[node name="TableV15" parent="Kitchen" instance=ExtResource("4_eqjeu")]
+transform = Transform3D(-0.305607, 1.33586e-08, -0.0257107, 1.35646e-08, 0.310322, -2.16436e-15, 0.0538871, -2.3555e-09, -0.145812, 7.51331, 1.79199, -11.389)
+
+[node name="SackV1" parent="Kitchen" instance=ExtResource("5_ptodb")]
+transform = Transform3D(-0.650642, 0.00681357, 2.9783e-10, -0.00118316, -0.112983, 0.640792, 0.00671006, 0.640757, 0.112989, 11.6856, 1.95, 8.56419)
+
+[node name="SackV2" parent="Kitchen" instance=ExtResource("5_ptodb")]
+transform = Transform3D(-0.0902138, 0.0623166, 0.641373, 0.116039, -0.63547, 0.0780648, 0.633859, 0.125203, 0.0769921, 8.2986, 0.859557, 7.35419)
+
+[node name="SackV3" parent="Kitchen" instance=ExtResource("5_ptodb")]
+transform = Transform3D(0.511997, 0.0444674, -0.399078, 0.116039, -0.63547, 0.0780652, -0.384415, -0.132596, -0.507961, 18.956, 2.098, -23.8397)
+
+[node name="FirePlaceV1" parent="Kitchen" instance=ExtResource("6_31n0q")]
+transform = Transform3D(-4.83296e-08, 0, 1.0711, 0, 0.691033, 0, -1.10565, 0, -4.68193e-08, 15.0496, 0.5, -31.941)
+
+[node name="PotV2" parent="Kitchen" instance=ExtResource("7_gex5n")]
+transform = Transform3D(-0.524157, 3.15748e-15, -4.16953e-08, 6.41907e-17, 0.469675, 3.60079e-08, 4.58232e-08, 3.54594e-08, -0.476939, 15.2321, 1.5263, -31.433)
+
+[node name="PotV3" parent="Kitchen" instance=ExtResource("7_gex5n")]
+transform = Transform3D(-0.524157, 3.15748e-15, -4.16953e-08, 6.41907e-17, 0.469675, 3.60079e-08, 4.58232e-08, 3.54594e-08, -0.476939, 13.8821, 1.5263, -31.433)
+
+[node name="PotV4" parent="Kitchen" instance=ExtResource("7_gex5n")]
+transform = Transform3D(-0.524157, 3.15748e-15, -4.16953e-08, 6.41907e-17, 0.469675, 3.60079e-08, 4.58232e-08, 3.54594e-08, -0.476939, 16.4321, 1.5263, -31.433)
+
+[node name="BottleV2" parent="Kitchen" instance=ExtResource("8_w6rfs")]
+transform = Transform3D(0.204796, 0, 0, 0, 0.204796, 0, 0, 0, 0.204796, 28.3, 3.8, -32.55)
+
+[node name="BottleV3" parent="Kitchen" instance=ExtResource("8_w6rfs")]
+transform = Transform3D(0.204796, 0, 0, 0, 0.204796, 0, 0, 0, 0.204796, 27, 3.75, -32.55)
+
+[node name="BottleV1" parent="Kitchen" instance=ExtResource("9_ihxjd")]
+transform = Transform3D(0.209364, 0, 0, 0, 0.209364, 0, 0, 0, 0.209364, 27.7, 3.75, -32.55)
+
+[node name="BookV2" parent="Kitchen" instance=ExtResource("10_ccq1v")]
+transform = Transform3D(0.31664, -6.08627e-08, 0.127565, -0.127564, 8.43254e-09, 0.31664, -5.96047e-08, -0.34137, -1.49218e-08, 29.122, 2.74472, -32.55)
+
+[node name="BookV1" parent="Kitchen" instance=ExtResource("11_pf66x")]
+transform = Transform3D(0.275676, -8.79585e-09, 0.201225, -0.201225, -1.20502e-08, 0.275676, -2.4266e-15, -0.341305, -1.49189e-08, 28.67, 2.78474, -32.55)
+
+[node name="BookV3" parent="Kitchen" instance=ExtResource("10_ccq1v")]
+transform = Transform3D(-0.0115737, -1.28923e-08, 0.341174, -0.341174, 6.00763e-08, -0.0115746, -5.96047e-08, -0.34137, -1.49218e-08, 24.816, 0.639372, -32.05)
+
+[node name="BookV4" parent="Kitchen" instance=ExtResource("11_pf66x")]
+transform = Transform3D(-0.00581328, 0.170652, 0.295521, -0.341238, 2.93427e-10, -0.0067126, -0.0033563, -0.295579, 0.170619, 25.326, 0.625917, -30.9)
+
+[node name="LanternV1" parent="Kitchen" instance=ExtResource("12_h3d47")]
+transform = Transform3D(0.155043, 0, 0, 0, 0.155043, 0, 0, 0, 0.155043, 24.938, 2.7106, -32.409)
+
+[node name="Node3D7" parent="Kitchen" instance=ExtResource("13_rn0dd")]
+transform = Transform3D(-0.00958176, 0, -0.999954, 0, 1, 0, 0.999954, 0, -0.00958176, 6.4638, 0.521066, -32.1563)
+
+[node name="PotV1" parent="Kitchen" instance=ExtResource("14_4i0sb")]
+transform = Transform3D(-0.51767, 7.81661e-08, 3.41675e-15, -5.02442e-08, -0.332752, 0.396559, 5.98787e-08, 0.396559, 0.332752, 19.6, 0.846643, -32.65)
+
+[node name="Node3D8" parent="Kitchen" instance=ExtResource("15_g184j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.45, 3.5, -32.85)
+
+[node name="BigSpoon" parent="Kitchen" instance=ExtResource("16_nnkhw")]
+transform = Transform3D(-2.23517e-08, -0.139715, -6.10712e-09, 0.0987931, -2.01235e-08, 0.0987931, -0.0987931, 1.14867e-08, 0.0987931, 21.15, 2.7, -32.85)
+
+[node name="KnifeV1" parent="Kitchen" instance=ExtResource("17_q1o53")]
+transform = Transform3D(5.16661e-09, 0.0590991, 1.03332e-08, 0.0590991, -5.16661e-09, -2.5833e-09, -2.5833e-09, 1.03332e-08, -0.0590991, 20.95, 3.5, -32.6)
+
+[node name="KnifeV3" parent="Kitchen" instance=ExtResource("17_q1o53")]
+transform = Transform3D(-0.00764799, -0.0192215, -0.0553602, 0.0570854, -0.0150636, -0.00265612, -0.0132467, -0.0538175, 0.0205159, 17.5, 2.38103, -25.2)
+
+[node name="Node3D9" parent="Kitchen" instance=ExtResource("15_g184j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.2738, 3.5, -32.85)
+
+[node name="BigSpoon2" parent="Kitchen" instance=ExtResource("16_nnkhw")]
+transform = Transform3D(-0.0984062, 0.0142857, -0.0981442, -0.00146504, -0.138452, -0.0186838, -0.0991676, -0.0121306, 0.0976667, 21.4738, 0.675183, -31.85)
+
+[node name="KnifeV2" parent="Kitchen" instance=ExtResource("17_q1o53")]
+transform = Transform3D(-3.09997e-09, -0.0354595, -1.54998e-08, 0.0354595, -3.09997e-09, -2.5833e-09, 1.54998e-09, -9.29989e-09, 0.0590991, 21.5738, 3.45, -32.65)
+
+[node name="MugV2" parent="Kitchen" instance=ExtResource("18_n2c1s")]
+transform = Transform3D(0.108909, -0.188637, -3.50437e-09, 0, -9.52117e-09, 0.092573, -0.188637, -0.108909, -2.02324e-09, 7.7389, 2.87523, 8.8482)
+
+[node name="MugV1" parent="Kitchen" instance=ExtResource("19_rwbo4")]
+transform = Transform3D(-0.0626139, -0.122854, -4.9226e-09, 0, -5.93472e-09, 0.124456, -0.133092, 0.0577974, 2.31586e-09, 8.4129, 2.85577, 8.9482)
+
+[node name="Spoon" parent="Kitchen" instance=ExtResource("20_jxskb")]
+transform = Transform3D(-0.0680024, 0.0920161, 0.00349285, -0.000481673, -0.00469747, 0.114373, 0.0920811, 0.0679298, 0.00317777, 8.4009, 1.95339, 8.62319)
+
+[node name="PlateV3" parent="Kitchen" instance=ExtResource("21_hf3lc")]
+transform = Transform3D(-0.442659, 3.86985e-08, 1.69156e-15, 0, -1.93492e-08, 0.442659, 3.86985e-08, 0.442659, 1.93492e-08, 11.85, 1.65723, -22.23)
+
+[node name="PlateV4" parent="Kitchen" instance=ExtResource("21_hf3lc")]
+transform = Transform3D(-0.442659, 3.86985e-08, 1.69156e-15, 0, -1.93492e-08, 0.442659, 3.86985e-08, 0.442659, 1.93492e-08, 8.9, 1.69984, -22.88)
+
+[node name="PlateV5" parent="Kitchen" instance=ExtResource("21_hf3lc")]
+transform = Transform3D(-0.442659, 3.86985e-08, 1.69156e-15, 0, -1.93492e-08, 0.442659, 3.86985e-08, 0.442659, 1.93492e-08, 8.9, 1.74984, -22.88)
+
+[node name="PlateV6" parent="Kitchen" instance=ExtResource("21_hf3lc")]
+transform = Transform3D(-0.442659, 3.86985e-08, 1.69156e-15, 0, -1.93492e-08, 0.442659, 3.86985e-08, 0.442659, 1.93492e-08, 8.9, 1.79984, -22.88)
+
+[node name="PlateV1" parent="Kitchen" instance=ExtResource("22_xtaes")]
+transform = Transform3D(-0.449874, 3.93292e-08, 1.71914e-15, 0, -1.96646e-08, 0.449874, 3.93292e-08, 0.449874, 1.96646e-08, 8.9, 1.64918, -22.88)
+
+[node name="PlateV7" parent="Kitchen" instance=ExtResource("21_hf3lc")]
+transform = Transform3D(-0.442659, 3.86985e-08, 1.69156e-15, 0, -1.93492e-08, 0.442659, 3.86985e-08, 0.442659, 1.93492e-08, 9.6, 1.65723, -24.38)
+
+[node name="BathtubV1" parent="Kitchen" instance=ExtResource("23_ms7sh")]
+transform = Transform3D(0.1386, 0, 0, 0, 0.13, 0, 0, 0, 0.198, 10.4, 1.65497, -21.63)
+
+[node name="Spoon2" parent="Kitchen" instance=ExtResource("20_jxskb")]
+transform = Transform3D(0.107571, 0.00525338, 0.0387869, 6.14696e-05, 0.113412, -0.0155312, -0.039141, 0.0146159, 0.106573, 21.75, 2.9, -32.75)
+
+[node name="BeerBarrelV1" parent="Kitchen" instance=ExtResource("24_k6nk3")]
+transform = Transform3D(0.542076, 0, 0, 0, 0.508197, 0, 0, 0, 0.548852, 1.15, 0.555825, -28.95)
+
+[node name="BeerBarrelV2" parent="Kitchen" instance=ExtResource("24_k6nk3")]
+transform = Transform3D(-2.36949e-08, 0, -0.548852, 0, 0.508197, 0, 0.542076, 0, -2.39911e-08, 3.65, 0.555825, -31.9)
+
+[node name="LockerV1" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(4.09428e-08, 0, -0.542304, 0, 0.408651, 0, 0.542304, 0, 4.09428e-08, 13.3569, 0.4, 8.6002)
+
+[node name="LockerV2" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(4.09199e-08, 2.69568e-15, 0.542, -4.73831e-08, 0.408422, 0, 0.542, 3.57054e-08, -4.09199e-08, 11.5072, 0.4, 8.6002)
+
+[node name="LockerV3" parent="Kitchen" instance=ExtResource("26_en3l4")]
+transform = Transform3D(4.46668e-08, 0, -0.59163, 0, 0.44582, 0, 0.59163, 0, 4.46668e-08, 9.6519, 0.4, 8.55019)
+
+[node name="LockerV4" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(-0.542304, 0, -5.48772e-09, 0, 0.408651, 0, 6.09746e-09, 0, -0.488074, 6.0121, 0.3, 3.5525)
+
+[node name="LockerV5" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(-0.542, 0, 1.89107e-08, 0, 0.408422, 0, 2.10119e-08, 0, 0.4878, 6.0121, 0.3, 1.88779)
+
+[node name="LockerV9" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(-0.542304, 0, -5.48772e-09, 0, 0.408651, 0, 6.09746e-09, 0, -0.488074, 6.0121, 0.3, 6.88249)
+
+[node name="LockerV10" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(-0.542, 0, 1.89107e-08, 0, 0.408422, 0, 2.10119e-08, 0, 0.4878, 6.0121, 0.3, 5.2178)
+
+[node name="LockerV7" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(-0.542304, 0, -5.48772e-09, 0, 0.408651, 0, 6.09746e-09, 0, -0.488074, 6.0121, 1.45, 3.5525)
+
+[node name="LockerV8" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(-0.542, 0, 1.89107e-08, 0, 0.408422, 0, 2.10119e-08, 0, 0.4878, 6.0121, 1.45, 1.88779)
+
+[node name="LockerV11" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(-0.542304, 0, -5.48772e-09, 0, 0.408651, 0, 6.09746e-09, 0, -0.488074, 6.0121, 1.45, 6.88249)
+
+[node name="LockerV12" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(-0.542, 0, 1.89107e-08, 0, 0.408422, 0, 2.10119e-08, 0, 0.4878, 6.0121, 1.45, 5.2178)
+
+[node name="LockerV13" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(-0.542304, 0, -5.48772e-09, 0, 0.408651, 0, 6.09746e-09, 0, -0.488074, 6.0121, 2.6, 3.5525)
+
+[node name="LockerV14" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(-0.542, 0, 1.89107e-08, 0, 0.408422, 0, 2.10119e-08, 0, 0.4878, 6.0121, 2.6, 1.88779)
+
+[node name="LockerV15" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(-0.542304, 0, -5.48772e-09, 0, 0.408651, 0, 6.09746e-09, 0, -0.488074, 6.0121, 2.6, 6.88249)
+
+[node name="LockerV16" parent="Kitchen" instance=ExtResource("25_tly4a")]
+transform = Transform3D(-0.542, 0, 1.89107e-08, 0, 0.408422, 0, 2.10119e-08, 0, 0.4878, 6.0121, 2.6, 5.2178)
+
+[node name="ShelfV1" parent="Kitchen" instance=ExtResource("27_nucqr")]
+transform = Transform3D(-1.16097e-07, -5.07519e-08, 0.398398, -5.96047e-08, -0.672229, -3.00782e-08, 0.531197, -2.98023e-08, 8.70726e-08, 29.6, 3.95, -32.45)
+
+[node name="PileOfWoodV1" parent="Kitchen" instance=ExtResource("28_hyrlt")]
+transform = Transform3D(-0.0144333, -0.595683, -2.60382e-08, -1.40648e-15, -2.60458e-08, 0.595858, -0.595683, 0.0144333, 6.30902e-10, 9.4076, 0.576083, -32.0982)
+
+[node name="TableV2" parent="Kitchen" instance=ExtResource("29_7drv6")]
+transform = Transform3D(-0.251381, -0.0782012, -2.87135e-09, 4.11536e-16, -9.99436e-09, 0.192061, -0.0914952, 0.214855, 7.88896e-09, 6.8222, 0.553091, -18.0788)
+
+[node name="TableV11" parent="Kitchen" instance=ExtResource("4_eqjeu")]
+transform = Transform3D(0.299748, 0.0803172, 1.67506e-09, 5.51242e-16, -1.35646e-08, 0.148061, 0.0803172, -0.299748, -6.25142e-09, 12.5808, 0.55233, -3.77605)
+
+[node name="TableV12" parent="Kitchen" instance=ExtResource("29_7drv6")]
+transform = Transform3D(0.0233154, -0.227774, -8.36331e-09, 7.36592e-16, -9.99436e-09, 0.192061, -0.266496, -0.019928, -7.31699e-10, 13.9914, 0.553091, -7.70274)
+
+[node name="Rocks" type="Node3D" parent="Kitchen"]
+
+[node name="Benches&Tables" type="Node3D" parent="."]
+transform = Transform3D(8.9407e-08, 0, -1, 0, 1, 0, 1, 0, 8.9407e-08, 19.95, 0.81044, -19.07)
+
+[node name="BenchV7" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(0.0684891, -0.212443, -0.147159, -0.130052, 0.00443533, -0.201072, 0.0894677, 0.169076, -0.17963, 1.3663, 0.503735, -2.778)
+
+[node name="BenchV8" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(0.0433541, -0.254957, -0.0720251, -0.110065, 0.00549924, -0.236029, 0.124959, 0.0933002, -0.182908, 4.8163, 0.503735, -7.978)
+
+[node name="BenchV9" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(0.0461274, -0.25959, -0.0366911, -0.14648, -0.048061, -0.151734, 0.0776188, 0.0635705, -0.264543, 3.36119, 0.503735, -5.4923)
+
+[node name="BenchV10" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(0.0501748, -0.184676, -0.206616, -0.146268, 0.0375386, -0.156121, 0.0754788, 0.195509, -0.165192, 1.1478, 0.464376, -3.6001)
+
+[node name="BenchV11" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(0.115024, -0.0851992, -0.207131, -0.126956, -0.0449244, -0.201018, 0.016135, 0.253892, -0.105076, 4.3494, 0.503735, -5.0329)
+
+[node name="BenchV6" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(0.0539555, -0.138931, -0.245719, -0.137989, 0.0837634, -0.157156, 0.0875018, 0.217762, -0.096317, 1.3663, 0.503735, -4.078)
+
+[node name="TableV11" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(4.29327e-08, 0.131387, 6.24087e-09, 0.163697, -1.35883e-08, 0.123647, 0.283532, -1.20495e-08, -0.0713875, 0.325397, 0.6005, -3.5702)
+
+[node name="TableV10" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.226638, 0.0727602, -0.0660659, 0.198204, -0.0126963, 0.112797, 0.128599, -0.108661, -0.0574176, 4.1254, 0.5005, -6.8702)
+
+[node name="TableV6" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.0765826, 0.115657, -0.0589361, 0.237344, 0.0164234, 0.0967111, 0.212109, -0.0601355, -0.0869378, 5.6636, 0.382623, -2.8529)
+
+[node name="TableV7" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.294262, 0.0112555, -0.0613803, 0.138038, -0.0574608, 0.113411, -0.0392771, -0.117619, -0.0612791, 1.5754, 0.5005, -4.8702)
+
+[node name="TableV9" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.2414, 0.0547191, -0.075938, 0.150572, 0.0351083, 0.120903, 0.161993, -0.114174, 0.000783282, 2.7387, 0.810773, -2.8953)
+
+[node name="TableV8" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.208869, -0.0922796, 0.0450803, 0.224871, 0.0438325, -0.092191, 0.113991, 0.082618, 0.0992637, 3.75299, 1.61178, -4.2727)
+
+[node name="BenchV4" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-7.52151e-09, 0.271547, -4.23642e-08, -0.172072, -1.18698e-08, 3.66174e-08, 2.05126e-08, 2.42782e-08, 0.307169, -10.528, 0.190482, -15.5963)
+
+[node name="BenchV25" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-7.52151e-09, 0.271547, -4.23642e-08, -0.172072, -1.18698e-08, 3.66174e-08, 2.05126e-08, 2.42782e-08, 0.307169, -8.57799, 0.190482, -15.5963)
+
+[node name="TableV12" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-2.31499e-07, -0.131387, -6.24089e-09, 3.04335e-16, -5.74311e-09, 0.142775, -0.327394, -2.59479e-07, -4.99887e-15, -9.5752, 0.191131, -15.6404)
+
+[node name="BenchV26" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-7.52151e-09, 0.271547, -4.23642e-08, -0.172072, -1.18698e-08, 3.66174e-08, 2.05126e-08, 2.42782e-08, 0.307169, -15.428, 0.190482, -21.5963)
+
+[node name="BenchV27" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-7.52151e-09, 0.271547, -4.23642e-08, -0.172072, -1.18698e-08, 3.66174e-08, 2.05126e-08, 2.42782e-08, 0.307169, -13.478, 0.190482, -21.5963)
+
+[node name="TableV20" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-2.31499e-07, -0.131387, -6.24089e-09, 3.04335e-16, -5.74311e-09, 0.142775, -0.327394, -2.59479e-07, -4.99887e-15, -14.4752, 0.191131, -21.6404)
+
+[node name="BenchV42" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-2.05126e-08, -3.61479e-08, -0.307169, -0.172072, -1.18698e-08, 3.66174e-08, -7.52151e-09, 0.271547, -5.57909e-08, -18.7251, 0.190482, -17.9286)
+
+[node name="BenchV43" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-2.05126e-08, -3.61479e-08, -0.307169, -0.172072, -1.18698e-08, 3.66174e-08, -7.52151e-09, 0.271547, -5.57909e-08, -18.7251, 0.190482, -15.9786)
+
+[node name="TableV28" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.327394, 2.65222e-07, 5.27167e-15, 3.04336e-16, -5.74311e-09, 0.142775, -2.17188e-07, -0.131387, -6.24089e-09, -18.681, 0.191131, -16.9758)
+
+[node name="BenchV28" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.98231e-08, 0.192013, -0.217201, -0.172072, -1.18698e-08, 3.66174e-08, 9.18608e-09, 0.192013, 0.217201, -28.6227, 0.190482, -63.6009)
+
+[node name="BenchV29" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.98231e-08, 0.192013, -0.217201, -0.172072, -1.18698e-08, 3.66174e-08, 9.18608e-09, 0.192013, 0.217201, -27.2439, 0.190482, -62.222)
+
+[node name="TableV21" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.231503, -0.0929044, -4.41297e-09, -1.7206e-16, -5.74311e-09, 0.142775, -0.231503, -0.0929048, -4.41298e-09, -27.9178, 0.191131, -62.9583)
+
+[node name="BenchV44" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(1.98231e-08, -0.192013, 0.217201, -0.172072, -1.18698e-08, 3.66174e-08, -9.18609e-09, -0.192013, -0.217201, -25.8309, 0.190482, -53.9366)
+
+[node name="TableV29" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-0.231503, 0.0929044, 4.41297e-09, 1.47287e-15, -5.74311e-09, 0.142775, 0.231503, 0.0929048, 4.41298e-09, -26.5358, 0.191131, -54.5792)
+
+[node name="BenchV36" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-7.52151e-09, 0.271547, -4.23642e-08, -0.172072, -1.18698e-08, 3.66174e-08, 2.05126e-08, 9.37707e-09, 0.307169, -35.4639, 0.190482, -16.3587)
+
+[node name="BenchV37" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-7.52151e-09, 0.271547, -4.23642e-08, -0.172072, -1.18698e-08, 3.66174e-08, 2.05126e-08, 9.37707e-09, 0.307169, -33.5139, 0.190482, -16.3587)
+
+[node name="TableV25" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-2.53851e-07, -0.131387, -6.24089e-09, -1.72058e-16, -5.74311e-09, 0.142775, -0.327395, -2.68792e-07, -4.99887e-15, -34.5111, 0.191131, -16.4028)
+
+[node name="BenchV38" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-7.52151e-09, 0.271547, -4.23642e-08, -0.172072, -1.18698e-08, 3.66174e-08, 2.05126e-08, 9.37707e-09, 0.307169, -54.0139, 0.190482, -23.5087)
+
+[node name="BenchV39" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-7.52151e-09, 0.271547, -4.23642e-08, -0.172072, -1.18698e-08, 3.66174e-08, 2.05126e-08, 9.37707e-09, 0.307169, -52.0639, 0.190482, -23.5087)
+
+[node name="TableV26" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-2.53851e-07, -0.131387, -6.24089e-09, -1.72058e-16, -5.74311e-09, 0.142775, -0.327395, -2.68792e-07, -4.99887e-15, -53.0611, 0.191131, -23.5528)
+
+[node name="BenchV59" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-3.74248e-09, -0.235167, -0.153584, -0.172072, -1.18698e-08, 3.66174e-08, -2.15252e-08, 0.135773, -0.266016, -68.1657, 0.190482, -18.2699)
+
+[node name="BenchV60" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-3.74248e-09, -0.235167, -0.153584, -0.172072, -1.18698e-08, 3.66174e-08, -2.15252e-08, 0.135773, -0.266016, -69.8544, 0.190482, -17.2949)
+
+[node name="TableV37" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.163698, 0.113785, 5.40477e-09, 9.51449e-16, -5.74311e-09, 0.142775, 0.283532, -0.0656933, -3.12044e-09, -68.9688, 0.191131, -17.7553)
+
+[node name="BenchV40" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(9.18608e-09, 0.192013, 0.217201, -0.172072, -1.18698e-08, 3.66174e-08, 1.98231e-08, -0.192013, 0.217201, -44.3051, 0.190482, -21.8388)
+
+[node name="BenchV41" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(9.18608e-09, 0.192013, 0.217201, -0.172072, -1.18698e-08, 3.66174e-08, 1.98231e-08, -0.192013, 0.217201, -42.9262, 0.190482, -23.2177)
+
+[node name="TableV27" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-0.231503, -0.0929045, -4.41298e-09, -1.72058e-16, -5.74311e-09, 0.142775, -0.231503, 0.0929042, 4.41297e-09, -43.6626, 0.191131, -22.5437)
+
+[node name="BenchV30" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.79268e-08, 0.222439, -0.176185, -0.172072, -1.18698e-08, 3.66174e-08, 1.24888e-08, 0.155753, 0.251618, -22.7055, 0.190482, -45.3015)
+
+[node name="BenchV31" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.79268e-08, 0.222439, -0.176185, -0.172072, -1.18698e-08, 3.66174e-08, 1.24888e-08, 0.155753, 0.251618, -21.1082, 0.190482, -44.183)
+
+[node name="TableV22" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.187786, -0.107625, -5.11224e-09, 3.04336e-16, -5.74311e-09, 0.142775, -0.268186, -0.0753605, -3.57963e-09, -21.8998, 0.191131, -44.7911)
+
+[node name="BenchV5" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.95618e-09, 0.262295, 0.0795012, -0.172072, -1.18698e-08, 3.66174e-08, 2.17604e-08, -0.0702818, 0.296702, -13.408, 0.190482, -46.9663)
+
+[node name="BenchV12" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.98231e-08, 0.192013, -0.217201, -0.172072, -1.18698e-08, 3.66174e-08, 9.18608e-09, 0.192013, 0.217201, -9.40799, 0.190482, -46.4663)
+
+[node name="TableV13" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.163697, -0.113784, -5.40477e-09, 0, -5.74311e-09, 0.142775, -0.283532, -0.0656935, -3.12045e-09, -11.1002, 0.191131, -47.2754)
+
+[node name="BenchV13" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(1.25743e-08, -0.262295, 0.079501, -0.172072, -1.18698e-08, 3.66174e-08, -1.7867e-08, -0.0702817, -0.296702, -7.8613, 0.190482, -43.4013)
+
+[node name="BenchV14" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(2.17603e-08, -0.0702816, 0.296702, -0.172072, -1.18698e-08, 3.66174e-08, 1.95617e-09, -0.262295, -0.079501, -10.2654, 0.190482, -46.0693)
+
+[node name="TableV14" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-0.283532, 0.0656931, 3.12044e-09, -7.79147e-17, -5.74311e-09, 0.142775, 0.163697, 0.113784, 5.40477e-09, -9.43447, 0.191131, -45.0725)
+
+[node name="BenchV46" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(1.98231e-08, -0.192013, 0.217201, -0.172072, -1.18698e-08, 3.66174e-08, -9.18609e-09, -0.192013, -0.217201, 1.83973, 0.190482, -56.2914)
+
+[node name="BenchV47" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(1.78669e-08, 0.0702816, 0.296702, -0.172072, -1.18698e-08, 3.66174e-08, 1.25743e-08, -0.262295, 0.0795011, 0.272738, 0.190482, -60.0055)
+
+[node name="TableV30" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-0.327394, -2.24088e-07, -4.33274e-15, -1.08522e-15, -5.74311e-09, 0.142775, 2.24048e-07, 0.131387, 6.24089e-09, 0.418139, 0.191131, -58.1355)
+
+[node name="BenchV48" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-2.17604e-08, 0.0702818, -0.296702, -0.172072, -1.18698e-08, 3.66174e-08, -1.95617e-09, 0.262295, 0.0795011, 2.15376, 0.190482, -62.8775)
+
+[node name="BenchV49" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-9.18606e-09, -0.192013, -0.217201, -0.172072, -1.18698e-08, 3.66174e-08, -1.98231e-08, 0.192013, -0.217201, 1.04526, 0.190482, -59.4615)
+
+[node name="TableV31" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.283532, 0.0656933, 3.12045e-09, 5.03654e-16, -5.74311e-09, 0.142775, 0.163697, -0.113784, -5.40477e-09, 1.49304, 0.191131, -60.6795)
+
+[node name="BenchV67" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(2.17604e-08, -0.0702818, 0.296702, -0.172072, -1.18698e-08, 3.66174e-08, 1.95618e-09, -0.262295, -0.0795012, -18.2373, 0.190482, -57.7634)
+
+[node name="BenchV68" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(9.18608e-09, 0.192013, 0.217201, -0.172072, -1.18698e-08, 3.66174e-08, 1.98231e-08, -0.192013, 0.217201, -17.7373, 0.190482, -61.7634)
+
+[node name="TableV41" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-0.283532, -0.0656935, -3.12045e-09, -1.08522e-15, -5.74311e-09, 0.142775, -0.163697, 0.113784, 5.40477e-09, -18.5464, 0.191131, -60.0712)
+
+[node name="BenchV69" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.7867e-08, -0.0702817, -0.296702, -0.172072, -1.18698e-08, 3.66174e-08, -1.25743e-08, 0.262295, -0.079501, -14.6723, 0.190482, -63.3101)
+
+[node name="BenchV70" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(1.95617e-09, -0.262295, -0.079501, -0.172072, -1.18698e-08, 3.66174e-08, -2.17603e-08, 0.0702816, -0.296702, -17.3403, 0.190482, -60.906)
+
+[node name="TableV42" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.163697, 0.113784, 5.40477e-09, 5.8157e-16, -5.74311e-09, 0.142775, 0.283532, -0.0656931, -3.12044e-09, -16.3435, 0.191131, -61.7369)
+
+[node name="BenchV50" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.25743e-08, 0.262295, -0.0795009, -0.172072, -1.18698e-08, 3.66174e-08, 1.7867e-08, 0.0702817, 0.296702, -30.5225, 0.190482, -52.5742)
+
+[node name="BenchV51" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(1.67701e-08, -0.235167, 0.153584, -0.172072, -1.18698e-08, 3.66174e-08, -1.40037e-08, -0.135774, -0.266016, -6.7379, 0.190482, -40.1122)
+
+[node name="TableV32" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-0.0847357, 0.12691, 6.02824e-09, -1.08522e-15, -5.74311e-09, 0.142775, 0.316239, 0.0340056, 1.61527e-09, -4.89394, 0.191131, -39.7687)
+
+[node name="BenchV52" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-7.52152e-09, 0.271548, 3.21416e-08, -0.172072, -1.18698e-08, 3.66174e-08, 2.05127e-08, -5.76781e-08, 0.307168, -6.94017, 0.190482, -43.4975)
+
+[node name="BenchV53" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-2.15251e-08, 0.135774, -0.266016, -0.172072, -1.18698e-08, 3.66174e-08, 3.74246e-09, 0.235167, 0.153584, -6.01245, 0.190482, -40.7176)
+
+[node name="TableV33" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.231503, -0.0929041, -4.41297e-09, 5.8157e-16, -5.74311e-09, 0.142775, -0.231503, -0.0929043, -4.41298e-09, -7.07306, 0.191131, -41.4654)
+
+[node name="BenchV32" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(7.52153e-09, -0.271548, -1.28999e-07, -0.172072, -1.18698e-08, 3.66174e-08, -2.05126e-08, 7.25793e-08, -0.307169, -18.2309, 0.190482, -42.117)
+
+[node name="BenchV33" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(2.15252e-08, -0.135774, 0.266016, -0.172072, -1.18698e-08, 3.66174e-08, -3.74248e-09, -0.235167, -0.153584, -21.9652, 0.190482, -43.6352)
+
+[node name="TableV23" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-0.231503, 0.0929042, 4.41297e-09, -1.00731e-15, -5.74311e-09, 0.142775, 0.231503, 0.0929045, 4.41298e-09, -20.5401, 0.191131, -42.4157)
+
+[node name="BenchV34" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(1.25743e-08, -0.262295, 0.079501, -0.172072, -1.18698e-08, 3.66174e-08, -1.7867e-08, -0.0702817, -0.296702, -19.3113, 0.190482, -19.1013)
+
+[node name="BenchV35" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(2.17603e-08, -0.0702816, 0.296702, -0.172072, -1.18698e-08, 3.66174e-08, 1.95617e-09, -0.262295, -0.079501, -21.7154, 0.190482, -21.7693)
+
+[node name="TableV24" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-0.283532, 0.0656931, 3.12044e-09, -7.79147e-17, -5.74311e-09, 0.142775, 0.163697, 0.113784, 5.40477e-09, -20.8845, 0.191131, -20.7725)
+
+[node name="BenchV15" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.7867e-08, -0.0702817, -0.296702, -0.172072, -1.18698e-08, 3.66174e-08, -1.25743e-08, 0.262295, -0.079501, -33.614, 0.190482, -45.4318)
+
+[node name="BenchV16" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(1.95617e-09, -0.262295, -0.079501, -0.172072, -1.18698e-08, 3.66174e-08, -2.17603e-08, 0.0702816, -0.296702, -36.047, 0.190482, -42.2177)
+
+[node name="TableV15" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.163697, 0.113784, 5.40477e-09, -7.79146e-17, -5.74311e-09, 0.142775, 0.283532, -0.0656931, -3.12044e-09, -34.5002, 0.191131, -43.2786)
+
+[node name="BenchV45" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(7.42346e-09, 0.208018, 0.197444, -0.172072, -1.18698e-08, 3.66174e-08, 2.05484e-08, -0.174548, 0.235305, -7.05072, 0.190482, -19.3376)
+
+[node name="BenchV54" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-3.84526e-09, 0.267422, 0.0533392, -0.172072, -1.18698e-08, 3.66174e-08, 2.1507e-08, -0.0471537, 0.302502, -4.86356, 0.190482, -21.6013)
+
+[node name="TableV34" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-0.138363, -0.119077, -5.65617e-09, 5.81572e-16, -5.74311e-09, 0.142775, -0.29672, 0.0555262, 2.63751e-09, -6.49693, 0.191131, -20.6792)
+
+[node name="BenchV17" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(1.25743e-08, -0.262295, 0.079501, -0.172072, -1.18698e-08, 3.66174e-08, -1.7867e-08, -0.0702817, -0.296702, -37.7313, 0.190482, -14.4513)
+
+[node name="BenchV18" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(2.17603e-08, -0.0702816, 0.296702, -0.172072, -1.18698e-08, 3.66174e-08, 1.95617e-09, -0.262295, -0.079501, -40.9454, 0.190482, -16.8843)
+
+[node name="TableV16" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-0.283532, 0.0656931, 3.12044e-09, -7.79147e-17, -5.74311e-09, 0.142775, 0.163697, 0.113784, 5.40477e-09, -39.8845, 0.191131, -15.3375)
+
+[node name="BenchV19" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(9.1861e-09, 0.192013, 0.217201, -0.172072, -1.18698e-08, 3.66174e-08, 1.98231e-08, -0.192013, 0.217201, -53.2577, 0.190482, -2.23206)
+
+[node name="BenchV20" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.25743e-08, 0.262295, -0.0795011, -0.172072, -1.18698e-08, 3.66174e-08, 1.78669e-08, 0.0702816, 0.296702, -49.5436, 0.190482, -3.79904)
+
+[node name="TableV17" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-2.24048e-07, -0.131387, -6.24089e-09, -1.3661e-15, -5.74311e-09, 0.142775, -0.327394, -2.53891e-07, -4.6658e-15, -51.4136, 0.191131, -3.65366)
+
+[node name="BenchV61" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-9.1861e-09, -0.192013, -0.217201, -0.172072, -1.18698e-08, 3.66174e-08, -1.98231e-08, 0.192013, -0.217201, -43.7781, 0.190482, -9.31331)
+
+[node name="BenchV62" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(1.25743e-08, -0.262295, 0.0795011, -0.172072, -1.18698e-08, 3.66174e-08, -1.78669e-08, -0.0702816, -0.296702, -47.4922, 0.190482, -7.74632)
+
+[node name="TableV38" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(2.61301e-07, 0.131387, 6.24089e-09, -7.26783e-16, -5.74311e-09, 0.142775, 0.327394, 2.3899e-07, 4.22172e-15, -45.6222, 0.191131, -7.8917)
+
+[node name="BenchV63" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-2.05126e-08, 3.53264e-08, -0.307169, -0.172072, -1.18698e-08, 3.66174e-08, -7.52153e-09, 0.271548, 1.66252e-07, -52.07, 0.190482, -21.2778)
+
+[node name="BenchV64" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-3.74247e-09, -0.235167, -0.153584, -0.172072, -1.18698e-08, 3.66174e-08, -2.15252e-08, 0.135774, -0.266016, -53.5882, 0.190482, -17.5435)
+
+[node name="TableV39" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.231503, 0.0929045, 4.41298e-09, -1.3661e-15, -5.74311e-09, 0.142775, 0.231503, -0.0929042, -4.41297e-09, -52.3687, 0.191131, -18.9686)
+
+[node name="BenchV65" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(2.05126e-08, -6.51287e-08, 0.307169, -0.172072, -1.18698e-08, 3.66174e-08, 7.52153e-09, -0.271548, -1.3645e-07, -53.7659, 0.190482, -9.56753)
+
+[node name="BenchV66" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(3.74248e-09, 0.235167, 0.153584, -0.172072, -1.18698e-08, 3.66174e-08, 2.15252e-08, -0.135774, 0.266016, -52.2476, 0.190482, -13.3018)
+
+[node name="TableV40" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(-0.231503, -0.0929045, -4.41298e-09, -7.26783e-16, -5.74311e-09, 0.142775, -0.231503, 0.0929042, 4.41297e-09, -53.4671, 0.191131, -11.8767)
+
+[node name="BenchV55" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-2.15252e-08, 0.135774, -0.266016, -0.172072, -1.18698e-08, 3.66174e-08, 3.74249e-09, 0.235167, 0.153584, -70.1281, 0.190482, -6.49511)
+
+[node name="BenchV56" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.40037e-08, -0.135774, -0.266016, -0.172072, -1.18698e-08, 3.66174e-08, -1.67701e-08, 0.235167, -0.153584, -69.5758, 0.190482, -2.50199)
+
+[node name="TableV35" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.316239, 0.0340056, 1.61527e-09, -1.08522e-15, -5.74311e-09, 0.142775, 0.0847357, -0.12691, -6.02824e-09, -69.2323, 0.191131, -4.34595)
+
+[node name="BenchV57" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-2.15252e-08, 0.135774, -0.266016, -0.172072, -1.18698e-08, 3.66174e-08, 3.74249e-09, 0.235167, 0.153584, -60.5781, 0.190482, -36.0451)
+
+[node name="BenchV58" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.40037e-08, -0.135774, -0.266016, -0.172072, -1.18698e-08, 3.66174e-08, -1.67701e-08, 0.235167, -0.153584, -60.0258, 0.190482, -32.052)
+
+[node name="TableV36" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.316239, 0.0340056, 1.61527e-09, -1.08522e-15, -5.74311e-09, 0.142775, 0.0847357, -0.12691, -6.02824e-09, -59.6822, 0.191131, -33.896)
+
+[node name="BenchV21" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-2.17604e-08, 0.0702818, -0.296702, -0.172072, -1.18698e-08, 3.66174e-08, -1.95618e-09, 0.262295, 0.0795011, -63.7568, 0.190482, -21.8953)
+
+[node name="BenchV22" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-9.18608e-09, -0.192013, -0.217201, -0.172072, -1.18698e-08, 3.66174e-08, -1.98231e-08, 0.192013, -0.217201, -64.2568, 0.190482, -17.8953)
+
+[node name="TableV18" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.283532, 0.0656935, 3.12045e-09, -7.79147e-17, -5.74311e-09, 0.142775, 0.163697, -0.113784, -5.40477e-09, -63.4477, 0.191131, -19.5875)
+
+[node name="BenchV23" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(-1.7867e-08, -0.0702817, -0.296702, -0.172072, -1.18698e-08, 3.66174e-08, -1.25743e-08, 0.262295, -0.079501, -39.739, 0.190482, -39.4518)
+
+[node name="BenchV24" parent="Benches&Tables" instance=ExtResource("32_yu4m3")]
+transform = Transform3D(1.95617e-09, -0.262295, -0.079501, -0.172072, -1.18698e-08, 3.66174e-08, -2.17603e-08, 0.0702816, -0.296702, -42.172, 0.190482, -36.2377)
+
+[node name="TableV19" parent="Benches&Tables" instance=ExtResource("33_jmm2f")]
+transform = Transform3D(0.163697, 0.113784, 5.40477e-09, -7.79146e-17, -5.74311e-09, 0.142775, 0.283532, -0.0656931, -3.12044e-09, -40.6252, 0.191131, -37.2986)
+
+[node name="Rocks" type="Node3D" parent="."]
+
+[node name="Node3D5" parent="Rocks" instance=ExtResource("3_rkleb")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 112.701, 0.952129, -104.988)
+
+[node name="Node3D21" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(-0.960551, 0, -0.278103, 0, 1, 0, 0.278103, 0, -0.960551, 101.8, 1.37507, -66.4295)
+
+[node name="Node3D25" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(-0.517236, 0, 0.855843, 0, 1, 0, -0.855843, 0, -0.517236, 98.17, 1.37507, -94.1395)
+
+[node name="Node3D22" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(-0.726479, 0, 0.687189, 0, 1, 0, -0.687189, 0, -0.726479, 98.3283, 1.37507, -98.8069)
+
+[node name="Node3D26" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(-0.726479, 0, 0.687189, 0, 1, 0, -0.687189, 0, -0.726479, 97.3283, 1.37507, -84.8069)
+
+[node name="Node3D23" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(-0.0671966, 0, -0.99774, 0, 1, 0, 0.99774, 0, -0.0671966, 119.038, 1.37507, -54.5815)
+
+[node name="Node3D27" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.99774, 0, -0.0671965, 0, 1, 0, 0.0671965, 0, 0.99774, 118.899, 1.37507, -51.5952)
+
+[node name="Node3D28" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.193327, 0, -0.981134, 0, 1, 0, 0.981134, 0, 0.193327, 112.833, 1.37507, -24.3148)
+
+[node name="Node3D29" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.447634, 0, -0.894217, 0, 1, 0, 0.894217, 0, 0.447634, 111.088, 1.37507, -19.9831)
+
+[node name="Node3D30" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.447634, 0, -0.894217, 0, 1, 0, 0.894217, 0, 0.447634, 116.816, 1.37507, -32.7967)
+
+[node name="Node3D36" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.99774, 0, -0.0671965, 0, 1, 0, 0.0671965, 0, 0.99774, 108.749, 1.37507, -34.6452)
+
+[node name="Node3D37" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.193327, 0, -0.981134, 0, 1, 0, 0.981134, 0, 0.193327, 102.683, 1.37507, -7.3648)
+
+[node name="Node3D38" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.447634, 0, -0.894217, 0, 1, 0, 0.894217, 0, 0.447634, 100.938, 1.37507, -3.033)
+
+[node name="Node3D39" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.447634, 0, -0.894217, 0, 1, 0, 0.894217, 0, 0.447634, 106.666, 1.37507, -15.8467)
+
+[node name="Node3D40" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.753024, 0, 0.657993, 0, 1, 0, -0.657993, 0, 0.753024, 97.3217, 1.37507, -17.218)
+
+[node name="Node3D41" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.83047, 0, -0.557064, 0, 1, 0, 0.557064, 0, 0.83047, 113.622, 1.37507, 6.3617)
+
+[node name="Node3D42" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.948832, 0, -0.315782, 0, 1, 0, 0.315782, 0, 0.948832, 115.451, 1.37507, 10.6587)
+
+[node name="Node3D43" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.948832, 0, -0.315782, 0, 1, 0, 0.315782, 0, 0.948832, 110.441, 1.37507, -2.45219)
+
+[node name="Node3D69" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.193327, 0, -0.981134, 0, 1, 0, 0.981134, 0, 0.193327, 125.983, 3.22507, -24.3148)
+
+[node name="Node3D70" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.447634, 0, -0.894217, 0, 1, 0, 0.894217, 0, 0.447634, 124.238, 3.22507, -19.9831)
+
+[node name="Node3D71" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.447634, 0, -0.894217, 0, 1, 0, 0.894217, 0, 0.447634, 121.016, 3.22507, -32.7967)
+
+[node name="Node3D72" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.99774, 0, -0.0671965, 0, 1, 0, 0.0671965, 0, 0.99774, 117.849, 3.22507, -34.6452)
+
+[node name="Node3D73" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.193327, 0, -0.981134, 0, 1, 0, 0.981134, 0, 0.193327, 110.483, 3.22507, -7.3648)
+
+[node name="Node3D74" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.447634, 0, -0.894217, 0, 1, 0, 0.894217, 0, 0.447634, 108.738, 3.22507, -3.033)
+
+[node name="Node3D75" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.447634, 0, -0.894217, 0, 1, 0, 0.894217, 0, 0.447634, 114.466, 3.22507, -15.8467)
+
+[node name="Node3D76" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.753024, 0, 0.657993, 0, 1, 0, -0.657993, 0, 0.753024, 110.472, 3.22507, -17.218)
+
+[node name="Node3D77" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.83047, 0, -0.557064, 0, 1, 0, 0.557064, 0, 0.83047, 121.672, 3.22507, 6.3617)
+
+[node name="Node3D79" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.948832, 0, -0.315782, 0, 1, 0, 0.315782, 0, 0.948832, 118.491, 3.22507, -2.45219)
+
+[node name="Node3D44" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(-0.10708, 0, 0.99425, 0, 1, 0, -0.99425, 0, -0.10708, 28.3235, 1.37507, -22.3744)
+
+[node name="Node3D45" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.932658, 0, 0.360762, 0, 1, 0, -0.360762, 0, 0.932658, 56.2429, 1.37507, -21.1374)
+
+[node name="Node3D46" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.802901, 0, 0.596113, 0, 1, 0, -0.596113, 0, 0.802901, 60.8119, 1.37507, -20.1711)
+
+[node name="Node3D47" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.802901, 0, 0.596113, 0, 1, 0, -0.596113, 0, 0.802901, 47.1982, 1.37507, -23.5869)
+
+[node name="Node3D48" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.981134, 0, 0.193327, 0, 1, 0, -0.193327, 0, 0.981134, 28.1114, 1.37507, -57.8812)
+
+[node name="Node3D49" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.440676, 0, -0.897666, 0, 1, 0, 0.897666, 0, 0.440676, 29.3125, 1.37507, -29.9603)
+
+[node name="Node3D50" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.663822, 0, -0.747891, 0, 1, 0, 0.747891, 0, 0.663822, 28.748, 1.37507, -25.3244)
+
+[node name="Node3D51" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.663822, 0, -0.747891, 0, 1, 0, 0.747891, 0, 0.663822, 30.9644, 1.37507, -39.184)
+
+[node name="Node3D52" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(-0.193327, 0, 0.981134, 0, 1, 0, -0.981134, 0, -0.193327, 9.1454, 1.37507, -107.655)
+
+[node name="Node3D53" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.897666, 0, 0.440676, 0, 1, 0, -0.440676, 0, 0.897666, 37.0663, 1.37507, -108.856)
+
+[node name="Node3D54" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.747891, 0, 0.663822, 0, 1, 0, -0.663822, 0, 0.747891, 41.7021, 1.37507, -108.291)
+
+[node name="Node3D55" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.747891, 0, 0.663822, 0, 1, 0, -0.663822, 0, 0.747891, 27.8426, 1.37507, -110.508)
+
+[node name="Node3D56" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.239431, 0, 0.970913, 0, 1, 0, -0.970913, 0, 0.239431, 28.6593, 1.37507, -109.38)
+
+[node name="Node3D57" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.999799, 0, 0.020018, 0, 1, 0, -0.020018, 0, 0.999799, 54.4719, 1.37507, -98.6685)
+
+[node name="Node3D58" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.958363, 0, 0.285555, 0, 1, 0, -0.285555, 0, 0.958363, 58.4348, 1.37507, -96.1977)
+
+[node name="Node3D59" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.958363, 0, 0.285555, 0, 1, 0, -0.285555, 0, 0.958363, 46.8104, 1.37507, -104.064)
+
+[node name="Node3D60" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(-0.72112, 0, 0.69281, 0, 1, 0, -0.69281, 0, -0.72112, 38.8276, 1.37507, -94.2136)
+
+[node name="Node3D61" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.482564, 0, 0.875861, 0, 1, 0, -0.875861, 0, 0.482564, 61.0102, 1.37507, -111.212)
+
+[node name="Node3D62" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.231884, 0, 0.972744, 0, 1, 0, -0.972744, 0, 0.231884, 65.1314, 1.37507, -113.409)
+
+[node name="Node3D63" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.231884, 0, 0.972744, 0, 1, 0, -0.972744, 0, 0.231884, 52.5071, 1.37507, -107.275)
+
+[node name="Node3D64" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.855843, 0, 0.517236, 0, 1, 0, -0.517236, 0, 0.855843, 76.6023, 1.37507, -84.0764)
+
+[node name="Node3D65" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.72112, 0, -0.69281, 0, 1, 0, 0.69281, 0, 0.72112, 81.1555, 1.37507, -57.1351)
+
+[node name="Node3D66" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.958362, 0, 0.285555, 0, 1, 0, -0.285555, 0, 0.958362, 86.1806, 1.37507, -63.7358)
+
+[node name="Node3D68" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.879582, 0, -0.475746, 0, 1, 0, 0.475746, 0, 0.879582, 60.3556, 1.37507, -46.3158)
+
+[node name="Node3D67" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.879582, 0, -0.475747, 0, 1, 0, 0.475747, 0, 0.879582, 79.553, 1.37507, -66.3675)
+
+[node name="Node3D31" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.404391, 0, 0.914586, 0, 1, 0, -0.914586, 0, 0.404391, 106.753, 1.37507, -68.6245)
+
+[node name="Node3D24" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(-0.894216, 0, -0.447634, 0, 1, 0, 0.447634, 0, -0.894216, 101.131, 1.37507, -57.4046)
+
+[node name="Node3D32" parent="Rocks" instance=ExtResource("31_j4h6g")]
+transform = Transform3D(-0.981718, 0, -0.190347, 0, 1, 0, 0.190347, 0, -0.981718, 100.882, 0.94685, -91.1586)
+
+[node name="Node3D34" parent="Rocks" instance=ExtResource("31_j4h6g")]
+transform = Transform3D(0.828775, 0, -0.559584, 0, 1, 0, 0.559584, 0, 0.828775, 107.947, 0.94685, -83.3686)
+
+[node name="Node3D35" parent="Rocks" instance=ExtResource("31_j4h6g")]
+transform = Transform3D(-0.190347, 0, 0.981718, 0, 1, 0, -0.981718, 0, -0.190347, 99.037, 0.94685, -89.7186)
+
+[node name="Node3D33" parent="Rocks" instance=ExtResource("31_j4h6g")]
+transform = Transform3D(-0.1569, 0, -0.987615, 0, 1, 0, 0.987615, 0, -0.1569, 109.192, 0.94685, -57.1888)
+
+[node name="Node3D" parent="Rocks" instance=ExtResource("31_j4h6g")]
+transform = Transform3D(0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 93.3, 1.6, -52.2)
+
+[node name="Node3D2" parent="Rocks" instance=ExtResource("34_8xc0x")]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 69.45, 0.0499997, -85.6)
+
+[node name="Node3D3" parent="Rocks" instance=ExtResource("31_j4h6g")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 51.5, 1.25, -3.7)
+
+[node name="Node3D80" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.9177, 0, -0.397276, 0, 1, 0, 0.397276, 0, 0.9177, 27.3924, 1.37507, -9.35722)
+
+[node name="Node3D81" parent="Rocks" instance=ExtResource("30_pdcbd")]
+transform = Transform3D(0.9177, 0, -0.397276, 0, 1, 0, 0.397276, 0, 0.9177, 23.5437, 1.37507, -22.8549)
+
+[node name="Node3D6" parent="Rocks" instance=ExtResource("31_j4h6g")]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 8.47208, 1.25, -9.18601)
+
+[node name="Node3D7" parent="Rocks" instance=ExtResource("31_j4h6g")]
+transform = Transform3D(-2.98023e-08, 0, -1, 0, 1, 0, 1, 0, -2.98023e-08, 31.3721, 1.25, -4.38601)
+
+[node name="Node3D4" parent="Rocks" instance=ExtResource("31_j4h6g")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 40.65, 1.2, -3.05)

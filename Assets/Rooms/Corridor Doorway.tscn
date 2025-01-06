@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3vogpkiuyhw3"]
+
+[ext_resource type="Material" uid="uid://dhchjf8sql6b5" path="res://Assets/gray-stone-bricks-tile-texture/textures/GrayStone Bricks.tres" id="1_6rb7x"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Wall15" type="CSGBox3D" parent="."]
+transform = Transform3D(20, 0, -3.49691e-06, 3.49691e-06, -8.74228e-07, 20, -1.52855e-13, -20, -8.74228e-07, 6.5119, 2.49983, -4.4125)
+material_override = ExtResource("1_6rb7x")
+snap = 1e-06
+use_collision = true
+size = Vector3(0.05, 0.5, 0.25)
+
+[node name="Wall16" type="CSGBox3D" parent="."]
+transform = Transform3D(20, 0, -3.49691e-06, 3.49691e-06, -8.74228e-07, 20, -1.52855e-13, -20, -8.74228e-07, 13.5619, 2.49983, -4.4125)
+material_override = ExtResource("1_6rb7x")
+snap = 1e-06
+use_collision = true
+size = Vector3(0.05, 0.5, 0.25)

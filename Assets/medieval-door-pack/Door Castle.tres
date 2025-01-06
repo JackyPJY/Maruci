@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://cayjo4abh4ac3"]
+
+[ext_resource type="Texture2D" uid="uid://xl6bu87pof2p" path="res://Assets/medieval-door-pack/textures/SM_DoorEntranceCastle_Albedo.png" id="1_xxuvh"]
+[ext_resource type="Texture2D" uid="uid://caj8k4i1ht36a" path="res://Assets/medieval-door-pack/textures/SM_DoorEntranceCastle_AO.png" id="2_vhnlo"]
+[ext_resource type="Texture2D" uid="uid://3r0llgxvx0w3" path="res://Assets/medieval-door-pack/textures/SM_DoorEntranceCastle_Metallic.png" id="3_5pdtm"]
+[ext_resource type="Texture2D" uid="uid://dle0c78nxyyjy" path="res://Assets/medieval-door-pack/textures/SM_DoorEntranceCastle_Normal.png" id="4_hmfj7"]
+[ext_resource type="Texture2D" uid="uid://dw87o08jlkval" path="res://Assets/medieval-door-pack/textures/SM_DoorEntranceCastle_Roughness.png" id="5_xm7lr"]
+
+[resource]
+albedo_texture = ExtResource("1_xxuvh")
+metallic = 1.0
+metallic_texture = ExtResource("3_5pdtm")
+roughness_texture = ExtResource("5_xm7lr")
+normal_enabled = true
+normal_texture = ExtResource("4_hmfj7")
+ao_enabled = true
+ao_texture = ExtResource("2_vhnlo")

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://kxv7vm5ittvg"]
+
+[ext_resource type="ArrayMesh" uid="uid://1msrk6oomb" path="res://Assets/medieval-door-pack/Individuals/Door Simple.res" id="1_o2fri"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_04pwy"]
+size = Vector3(0.0126904, 0.00134277, 0.0171432)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DoorSimple" type="MeshInstance3D" parent="."]
+transform = Transform3D(185, 0, 0, 0, -8.08661e-06, 185, 0, -185, -8.08661e-06, 0, 0, 0)
+mesh = ExtResource("1_o2fri")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="DoorSimple"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorSimple/StaticBody3D"]
+transform = Transform3D(0.993446, 0, 0, 0, 1, 1.06581e-14, 0, 2.01084e-12, 1.01257, -0.00605668, 0.000671386, 0.0088271)
+shape = SubResource("BoxShape3D_04pwy")

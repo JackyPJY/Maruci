@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://b80nxfn36dmps"]
+
+[ext_resource type="PackedScene" uid="uid://biqpxutmbhibd" path="res://Assets/Medieval props/Prefabs/BoxV1.prefab.scn" id="1_v6uq8"]
+[ext_resource type="ArrayMesh" uid="uid://326pxx3k6ltn" path="res://Assets/Medieval props/FBX/extracted/BoxV1.Cube_002.mesh" id="2_imkor"]
+[ext_resource type="Material" uid="uid://csqaepc87nw2s" path="res://Assets/Medieval props/Materials/BoxV1.material" id="3_m6osu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mbbn8"]
+size = Vector3(3.52588, 1, 3.05)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_csibe"]
+size = Vector3(1.5793, 1, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="BoxV1" parent="." instance=ExtResource("1_v6uq8")]
+transform = Transform3D(-0.791743, 6.92164e-08, 2.90452e-15, 0, -3.46082e-08, 0.760074, 6.92164e-08, 0.791743, 3.32239e-08, -0.71933, -0.00200003, 0.742666)
+
+[node name="BoxV4" parent="." instance=ExtResource("1_v6uq8")]
+transform = Transform3D(-0.779715, -0.137485, -5.76926e-09, -3.35316e-22, -3.46082e-08, 0.760074, -0.137485, 0.779715, 3.27191e-08, -2.61933, -0.00200003, 0.842666)
+
+[node name="BoxV2" parent="." instance=ExtResource("1_v6uq8")]
+transform = Transform3D(-0.606511, 0.508923, 2.13559e-08, -3.35316e-22, -3.46082e-08, 0.760074, 0.508923, 0.60651, 2.5451e-08, -2.81933, -0.00200003, 2.79267)
+
+[node name="BoxV3" parent="." instance=ExtResource("1_v6uq8")]
+transform = Transform3D(0.270792, 0.743995, 3.12202e-08, -3.35316e-22, -3.46082e-08, 0.760074, 0.743995, -0.270792, -1.13632e-08, -0.919993, -0.00200003, 2.61177)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.76294, 0.5, 1.525)
+shape = SubResource("BoxShape3D_mbbn8")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D2"]
+transform = Transform3D(0.985633, 0, 0.168902, 0, 1, 0, -0.168902, 0, 0.985633, -2.21247, 0.5, 3.17959)
+shape = SubResource("BoxShape3D_csibe")
+
+[node name="MeshRenderer2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.311308, -0.21798, -1.06716e-08, -2.80105e-21, -1.6612e-08, 0.425641, -0.21798, 0.311308, 1.52407e-08, -2.51933, 1.6241, 1.04267)
+gi_mode = 2
+mesh = ExtResource("2_imkor")
+skeleton = NodePath("")
+surface_material_override/0 = ExtResource("3_m6osu")

@@ -1,0 +1,419 @@
+[gd_scene load_steps=45 format=3 uid="uid://dac48ja20wpnv"]
+
+[ext_resource type="Script" path="res://Scripts/Player_Movement.gd" id="1_8xdgj"]
+[ext_resource type="PackedScene" uid="uid://dfe31afh2scn" path="res://Assets/Medieval props/Prefabs/LanternV3.prefab.scn" id="2_wy1ug"]
+[ext_resource type="PackedScene" uid="uid://bel4er2u8a3wr" path="res://Scene/interact_ray.tscn" id="3_s8xgr"]
+[ext_resource type="PackedScene" uid="uid://qegapifvcjxf" path="res://Scene/pausue_ui.tscn" id="5_tq1fb"]
+[ext_resource type="Script" path="res://Scripts/state_machine.gd" id="6_3ew6n"]
+[ext_resource type="FontFile" uid="uid://cyl73mjyqjjgn" path="res://Assets/Text Font/Perdition-jEwpv.ttf" id="6_xcx12"]
+[ext_resource type="Script" path="res://Scripts/IdlePlayerState.gd" id="7_5do1k"]
+[ext_resource type="FontFile" uid="uid://1ua6mst1mq26" path="res://Assets/Text Font/PerditionBold-z8ZY1.ttf" id="7_bhhce"]
+[ext_resource type="Script" path="res://Scripts/WalkingPlayerState.gd" id="8_3fj5g"]
+[ext_resource type="FontFile" uid="uid://cdtab0nrd6plv" path="res://Assets/Text Font/PerditionCondensed-51Agz.ttf" id="8_w5pjg"]
+[ext_resource type="Script" path="res://Scripts/runningPlayerState.gd" id="9_2q1d0"]
+[ext_resource type="Script" path="res://Scripts/Timer.gd" id="9_83fen"]
+[ext_resource type="FontFile" uid="uid://motf7nbd2v80" path="res://Assets/Text Font/PerditionItalic-GOmGa.ttf" id="9_sqr2w"]
+[ext_resource type="Script" path="res://Scripts/Item_Remainder.gd" id="10_6qy7b"]
+[ext_resource type="Script" path="res://Scripts/crouchingPlayerState.gd" id="10_l14q0"]
+[ext_resource type="FontFile" uid="uid://cxdiopbreyt56" path="res://Assets/Text Font/PerditionExpanded-6Yqo6.ttf" id="10_woqv5"]
+[ext_resource type="PackedScene" uid="uid://djfe3ivfe5u5x" path="res://Scene/MiniMap_UI.tscn" id="11_xp8px"]
+[ext_resource type="AudioStream" uid="uid://cem5176wuuc7a" path="res://Assets/Sound/SFX/pickup.mp3" id="12_ddl4a"]
+[ext_resource type="Script" path="res://Scripts/crouch_walking_player_state.gd" id="17_42rnb"]
+[ext_resource type="AudioStream" uid="uid://c4mu2dbonnt23" path="res://Assets/Sound/SFX/New Stone Walk Step(718882__gizemhozdemir__steps).wav" id="17_grsbi"]
+[ext_resource type="AudioStream" uid="uid://4wivqm1sftpd" path="res://Assets/Sound/SFX/Stone Running (491204__negroespumoso__steps-on-rock).wav" id="18_pxac0"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fj8bh"]
+
+[sub_resource type="Environment" id="Environment_5rfdh"]
+tonemap_exposure = 0.7
+glow_enabled = true
+fog_enabled = true
+fog_light_energy = 0.0
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0.473976, 0.473976, 0.473976, 1)
+adjustment_enabled = true
+adjustment_brightness = 0.7
+adjustment_contrast = 1.1
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_uivep"]
+dof_blur_far_enabled = true
+dof_blur_far_distance = 5.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rfdmr"]
+albedo_color = Color(1, 0.337255, 0, 1)
+
+[sub_resource type="PrismMesh" id="PrismMesh_upu74"]
+material = SubResource("StandardMaterial3D_rfdmr")
+size = Vector3(12, 7, 3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aq48a"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="TorusMesh" id="TorusMesh_sdrw3"]
+material = SubResource("StandardMaterial3D_aq48a")
+inner_radius = 4.199
+outer_radius = 12.427
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_tc6d7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b6237"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ndtne"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vcwk4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ex2vq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w7i1y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xli8a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rtnfy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_irm7e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f1kme"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q8w1c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wl85r"]
+
+[sub_resource type="Theme" id="Theme_atid5"]
+Button/colors/font_hover_color = Color(1, 0.384314, 0, 1)
+Button/colors/font_hover_pressed_color = Color(0.376471, 0.12549, 0, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 80
+Button/fonts/font = ExtResource("6_xcx12")
+Button/styles/disabled = SubResource("StyleBoxEmpty_b6237")
+Button/styles/disabled_mirrored = SubResource("StyleBoxEmpty_ndtne")
+Button/styles/focus = SubResource("StyleBoxEmpty_vcwk4")
+Button/styles/hover = SubResource("StyleBoxEmpty_ex2vq")
+Button/styles/hover_mirrored = SubResource("StyleBoxEmpty_w7i1y")
+Button/styles/hover_pressed = SubResource("StyleBoxEmpty_xli8a")
+Button/styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_rtnfy")
+Button/styles/normal = SubResource("StyleBoxEmpty_irm7e")
+Button/styles/normal_mirrored = SubResource("StyleBoxEmpty_f1kme")
+Button/styles/pressed = SubResource("StyleBoxEmpty_q8w1c")
+Button/styles/pressed_mirrored = SubResource("StyleBoxEmpty_wl85r")
+Label/font_sizes/font_size = 80
+Label/fonts/font = ExtResource("7_bhhce")
+RichTextLabel/fonts/bold_font = ExtResource("7_bhhce")
+RichTextLabel/fonts/bold_italics_font = ExtResource("8_w5pjg")
+RichTextLabel/fonts/italics_font = ExtResource("9_sqr2w")
+RichTextLabel/fonts/mono_font = ExtResource("10_woqv5")
+RichTextLabel/fonts/normal_font = ExtResource("6_xcx12")
+
+[sub_resource type="Animation" id="Animation_cmo2y"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control2/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bec3k"]
+resource_name = "WhiteScreen"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control2/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nuich"]
+_data = {
+"RESET": SubResource("Animation_cmo2y"),
+"WhiteScreen": SubResource("Animation_bec3k")
+}
+
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
+process_mode = 1
+script = ExtResource("1_8xdgj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_fj8bh")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+light_energy = 0.75
+omni_range = 2.85
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="Player Lamp" parent="Head" instance=ExtResource("2_wy1ug")]
+transform = Transform3D(0.0115359, 0, -0.0248408, 0, 0.021, 0, 0.0221793, 0, 0.0129203, 0.205283, -0.300546, -0.270435)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+cull_mask = 524285
+environment = SubResource("Environment_5rfdh")
+attributes = SubResource("CameraAttributesPractical_uivep")
+
+[node name="InteractRay" parent="Head/Camera3D" instance=ExtResource("3_s8xgr")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Head/Camera3D"]
+
+[node name="MarginContainer" type="MarginContainer" parent="Head/Camera3D/CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 100
+
+[node name="Label" type="Label" parent="Head/Camera3D/CanvasLayer/MarginContainer"]
+layout_mode = 2
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, -17.25)
+visibility_parent = NodePath(".")
+layers = 524288
+mesh = SubResource("PrismMesh_upu74")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Head"]
+visibility_parent = NodePath(".")
+layers = 524288
+mesh = SubResource("TorusMesh_sdrw3")
+
+[node name="PlayerStateMachine" type="Node" parent="." node_paths=PackedStringArray("CURRENT_STATE")]
+script = ExtResource("6_3ew6n")
+CURRENT_STATE = NodePath("IdlePlayerState")
+
+[node name="IdlePlayerState" type="Node" parent="PlayerStateMachine"]
+script = ExtResource("7_5do1k")
+
+[node name="WalkingPlayerState" type="Node" parent="PlayerStateMachine"]
+script = ExtResource("8_3fj5g")
+
+[node name="RunningPlayerState" type="Node" parent="PlayerStateMachine"]
+script = ExtResource("9_2q1d0")
+
+[node name="CrouchingPlayerState" type="Node" parent="PlayerStateMachine"]
+script = ExtResource("10_l14q0")
+
+[node name="CrouchWalkingPlayerState" type="Node" parent="PlayerStateMachine"]
+script = ExtResource("17_42rnb")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_grsbi")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_pxac0")
+volume_db = 5.0
+bus = &"SFX"
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_grsbi")
+pitch_scale = 0.4
+bus = &"SFX"
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_ddl4a")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+layers = 2
+mesh = SubResource("CapsuleMesh_tc6d7")
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="Timer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_atid5")
+
+[node name="Panel" type="Panel" parent="Timer"]
+layout_mode = 0
+offset_left = -105.0
+offset_right = 145.0
+offset_bottom = 108.0
+script = ExtResource("9_83fen")
+
+[node name="Minutes" type="Label" parent="Timer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -33.0
+offset_right = -123.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "00:"
+horizontal_alignment = 2
+
+[node name="Seconds" type="Label" parent="Timer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 58.0
+offset_right = -32.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "00"
+horizontal_alignment = 2
+
+[node name="ItemReminder2" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.96875
+anchor_right = 1.0
+anchor_bottom = 0.0555556
+grow_horizontal = 0
+size_flags_horizontal = 4
+theme = SubResource("Theme_atid5")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel2" type="Panel" parent="ItemReminder2"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -210.0
+offset_bottom = 108.0
+grow_horizontal = 0
+script = ExtResource("10_6qy7b")
+metadata/_edit_use_anchors_ = true
+
+[node name="ItemCurrent" type="Label" parent="ItemReminder2/Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0238095
+anchor_right = 0.97619
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -132.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "10"
+horizontal_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Dash" type="Label" parent="ItemReminder2/Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0047619
+anchor_right = 0.995238
+anchor_bottom = 1.0
+offset_left = 94.0
+offset_right = -84.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "/"
+horizontal_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ItemMax" type="Label" parent="ItemReminder2/Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_right = 0.97619
+anchor_bottom = 1.0
+offset_left = 98.0
+offset_right = -14.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "10"
+horizontal_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="PauseUI" parent="." instance=ExtResource("5_tq1fb")]
+process_priority = 0
+visible = false
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 229.0
+offset_top = -162.0
+offset_right = -229.0
+offset_bottom = -131.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_atid5")
+
+[node name="ProgressBar" type="ProgressBar" parent="Control"]
+self_modulate = Color(1, 0.384314, 0, 1)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+value = 50.0
+show_percentage = false
+
+[node name="Map" parent="." instance=ExtResource("11_xp8px")]
+visible = false
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 24.5, 0)
+layers = 524288
+light_cull_mask = 4294967294
+spot_range = 39.2
+spot_attenuation = -1.22
+
+[node name="Control2" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_nuich")
+}
+
+[connection signal="cleared" from="." to="Timer/Panel" method="_on_player_cleared"]
+[connection signal="paused" from="." to="PauseUI" method="_on_player_paused"]
+[connection signal="pickUpParse" from="." to="ItemReminder2/Panel2" method="_on_player_pick_up_parse"]
+[connection signal="pickedUp" from="Head/Camera3D/InteractRay" to="." method="_on_interact_ray_picked_up"]
+[connection signal="timeUp" from="Timer/Panel" to="." method="_on_panel_time_up"]
+
+[editable path="PauseUI"]

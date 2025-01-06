@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dr88umk6l0b0a"]
+
+[ext_resource type="PackedScene" uid="uid://c6tabfw3vhe78" path="res://Assets/small-rocks/Scene/smallrocks 2.tscn" id="1_1koxg"]
+[ext_resource type="PackedScene" uid="uid://c5gkskg72buqs" path="res://Assets/small-rocks/Scene/smallrocks 1.tscn" id="2_1cij1"]
+[ext_resource type="PackedScene" uid="uid://cb33xnw5bysmr" path="res://Assets/small-rocks/Scene/smallrocks 3.tscn" id="3_7ojcv"]
+[ext_resource type="PackedScene" uid="uid://dhehncnj727j7" path="res://Assets/small-rocks/Scene/smallrocks 4.tscn" id="4_de2ne"]
+[ext_resource type="PackedScene" uid="uid://cgty03d6qglcj" path="res://Assets/small-rocks/Scene/smallrocks 5.tscn" id="5_fxjpd"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="smallrock5" parent="." instance=ExtResource("1_1koxg")]
+transform = Transform3D(0.45, 0, 0, 0, 0.27, 0, 0, 0, 0.45, 0.378125, 0.0297979, 1.21563)
+
+[node name="smallrock3" parent="." instance=ExtResource("2_1cij1")]
+transform = Transform3D(0.75, 0, 0, 0, 0.6, 0, 0, 0, 0.75, -1.49688, 0.0757933, 0.090625)
+
+[node name="smallrock4" parent="." instance=ExtResource("3_7ojcv")]
+transform = Transform3D(0.75, 0, 0, 0, 0.6, 0, 0, 0, 0.75, -0.371875, 0.0860689, 0.840625)
+
+[node name="smallrock2" parent="." instance=ExtResource("4_de2ne")]
+transform = Transform3D(0.75, 0, 0, 0, 0.6, 0, 0, 0, 0.75, 0.865625, 0.0760033, 0.690625)
+
+[node name="smallrock7" parent="." instance=ExtResource("4_de2ne")]
+transform = Transform3D(0.75, 0, 0, 0, 0.6, 0, 0, 0, 0.75, 0.753125, 0.0760033, -0.284375)
+
+[node name="smallrock8" parent="." instance=ExtResource("3_7ojcv")]
+transform = Transform3D(0.75, 0, 0, 0, 0.6, 0, 0, 0, 0.75, 0.003125, 0.0260689, -0.284375)
+
+[node name="smallrock9" parent="." instance=ExtResource("1_1koxg")]
+transform = Transform3D(0.3375, 0, 0, 0, 0.27, 0, 0, 0, 0.3375, 0.715625, 0.0297979, 2.04062)
+
+[node name="smallrock1" parent="." instance=ExtResource("5_fxjpd")]
+transform = Transform3D(0.75, 0, 0, 0, 0.6, 0, 0, 0, 0.75, -0.746875, 0.0405328, -1.40937)

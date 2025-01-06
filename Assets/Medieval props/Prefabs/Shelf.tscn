@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbjr1gha6gcxp"]
+
+[ext_resource type="PackedScene" uid="uid://b8ymll3lm5e2s" path="res://Assets/Medieval props/Prefabs/ShelfV1.prefab.scn" id="1_e4i0n"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="ShelfV2" parent="." instance=ExtResource("1_e4i0n")]
+transform = Transform3D(-1.18607e-08, 1.19597e-09, 0.0138226, 1.37341e-08, -0.100292, 1.64832e-10, 0.1571, 8.76783e-09, 1.04357e-09, 0.205769, 0, 0.164376)
+
+[node name="ShelfV4" parent="." instance=ExtResource("1_e4i0n")]
+transform = Transform3D(-1.18607e-08, 1.19597e-09, 0.0138226, 1.37341e-08, -0.100292, 1.64832e-10, 0.1571, 8.76783e-09, 1.04357e-09, 0.61827, 0, 0.164376)
+
+[node name="ShelfV3" parent="." instance=ExtResource("1_e4i0n")]
+transform = Transform3D(-1.18607e-08, 1.19597e-09, 0.0138226, 1.37341e-08, -0.100292, 1.64832e-10, 0.1571, 8.76783e-09, 1.04357e-09, 0.412019, 0, 0.164376)
+
+[node name="ShelfV5" parent="." instance=ExtResource("1_e4i0n")]
+transform = Transform3D(-1.18607e-08, 1.19597e-09, 0.0138226, 1.37341e-08, -0.100292, 1.64832e-10, 0.1571, 8.76783e-09, 1.04357e-09, 0.82452, 0, 0.164376)

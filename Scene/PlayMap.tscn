@@ -1,0 +1,384 @@
+[gd_scene load_steps=24 format=3 uid="uid://cbdkrq8tmpfbw"]
+
+[ext_resource type="Script" path="res://Scripts/Random_Item_Generator.gd" id="1_enmis"]
+[ext_resource type="Material" uid="uid://bd7n8bcjg2voj" path="res://Assets/stone-house-siding-bl/Stone Brick.tres" id="1_r5hui"]
+[ext_resource type="Material" uid="uid://dxeqs36gf571k" path="res://Assets/small-rocks/Stone Texture.tres" id="2_67tf7"]
+[ext_resource type="PackedScene" uid="uid://dac48ja20wpnv" path="res://Scene/player.tscn" id="3_trwvc"]
+[ext_resource type="PackedScene" uid="uid://vk2pij6e0go1" path="res://Assets/Unknown Creature New/test.tscn" id="5_y22b8"]
+[ext_resource type="PackedScene" uid="uid://bhqv4wpeajhwu" path="res://Scene/canteen.tscn" id="6_xr1jk"]
+[ext_resource type="PackedScene" uid="uid://dr88umk6l0b0a" path="res://Assets/small-rocks/Pebbles.tscn" id="7_1701v"]
+[ext_resource type="PackedScene" uid="uid://ce64aq4r0x43" path="res://Scene/bedroom.tscn" id="7_biqee"]
+[ext_resource type="PackedScene" uid="uid://c4k3y0f8e05xv" path="res://Scene/storage.tscn" id="7_hj3rj"]
+[ext_resource type="PackedScene" uid="uid://byvssup2gqs8p" path="res://Scene/library.tscn" id="7_u1gyl"]
+[ext_resource type="PackedScene" uid="uid://criile5qe2636" path="res://Assets/propsv2/Lit candles_low.prefab.scn" id="8_pvt4j"]
+[ext_resource type="PackedScene" uid="uid://51rkgmck7vky" path="res://Assets/propsv2/Lit candles 2_low.prefab.scn" id="9_3afdp"]
+[ext_resource type="PackedScene" uid="uid://yeml6j4wgxx5" path="res://Assets/Medieval props/Prefabs/Candle Stand Lit.tscn" id="10_yapmj"]
+[ext_resource type="ArrayMesh" uid="uid://1msrk6oomb" path="res://Assets/medieval-door-pack/Individuals/Door Simple.res" id="11_6mgqi"]
+[ext_resource type="Script" path="res://Scripts/finish_line.gd" id="14_eue5k"]
+
+[sub_resource type="Environment" id="Environment_qkoq1"]
+background_color = Color(1, 1, 1, 0)
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_q63t7"]
+cell_height = 0.1
+agent_height = 2.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yixls"]
+cull_mode = 2
+depth_draw_mode = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wnq24"]
+size = Vector2(11.645, 20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gfdoy"]
+depth_draw_mode = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_mj1le"]
+size = Vector2(11.76, 22.585)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6ccyu"]
+size = Vector3(18.15, 7.65, 10.6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nfgyq"]
+size = Vector3(0.25, 0.05, 0.4)
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_enmis")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+visible = false
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_qkoq1")
+
+[node name="Player" parent="." instance=ExtResource("3_trwvc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67.2, 2, 72.25)
+
+[node name="SubViewport" parent="Player/Map/Main_Menu/Main_Menu/Main_Menu/MiniMap/SubViewportContainer" index="0"]
+render_target_update_mode = 0
+
+[node name="Camera3D" type="Camera3D" parent="Player/Map/Main_Menu/Main_Menu/Main_Menu/MiniMap/SubViewportContainer/SubViewport" index="0"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 3.08, 170, -13.345)
+cull_mask = 524288
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_q63t7")
+
+[node name="Unknown Creature(rigged)" parent="NavigationRegion3D" instance=ExtResource("5_y22b8")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 9.35, 1.242, 7.6)
+
+[node name="Floors&Ceiling" type="Node3D" parent="NavigationRegion3D"]
+
+[node name="Floor" type="CSGBox3D" parent="NavigationRegion3D/Floors&Ceiling"]
+transform = Transform3D(-178.508, 0, 1.38889e-05, 0, 1, 0, -1.56057e-05, 0, -158.87, 2.23136, 0.5, -12.7096)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(1.325, 1, 1.6)
+material = ExtResource("2_67tf7")
+
+[node name="Ceiling" type="CSGBox3D" parent="NavigationRegion3D/Floors&Ceiling"]
+transform = Transform3D(-178.508, 0, 1.38889e-05, 0, 1, 0, -1.56057e-05, 0, -158.87, -6.94445e-07, 7.5, 7.9435)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(1.5, 1, 1.4)
+material = ExtResource("2_67tf7")
+
+[node name="Canteen" parent="NavigationRegion3D" instance=ExtResource("6_xr1jk")]
+
+[node name="Bedroom" parent="NavigationRegion3D" instance=ExtResource("7_biqee")]
+
+[node name="Storage" parent="NavigationRegion3D" instance=ExtResource("7_hj3rj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="MiddleWalls" type="Node3D" parent="NavigationRegion3D"]
+
+[node name="Node3D2" type="Node3D" parent="NavigationRegion3D/MiddleWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 105.35)
+
+[node name="Wall" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D2"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, 2.2875, 4, 0)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(1.2, 6.695, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Node3D5" type="Node3D" parent="NavigationRegion3D/MiddleWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -102.105)
+
+[node name="Wall" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D5"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, 14.05, 4, 0)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(1.2, 2.3, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Wall2" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D5"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, -8.7, 4, 0)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(1.2, 2.3, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Wall11" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D5"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, -8.7, 4, -1.9)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(1.2, 2.3, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Wall7" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D5"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, 6.4, 4, 0)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(1.2, 0.84, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Wall8" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D5"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, -0.525, 4, 0)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(1.2, 1.03, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Wall9" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D5"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, 3.3, 5.7125, 0)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(0.595, 1, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Wall3" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D5"]
+transform = Transform3D(9.55343e-15, -2.18557e-07, 5, -5, -2.18557e-07, 0, 2.18557e-07, -5, -2.18557e-07, -3.085, 10.5, -5.63499)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(3.8, 2.3, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Wall4" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D5"]
+transform = Transform3D(9.55343e-15, -2.18557e-07, 5, -5, -2.18557e-07, 0, 2.18557e-07, -5, -2.18557e-07, 8.424, 10.5, -5.626)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(3.8, 2.3, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Wall10" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D5"]
+transform = Transform3D(-2.18557e-07, 5, 2.84217e-14, -5, -2.18557e-07, -1.05879e-21, 0, -2.84217e-14, 5, 2.674, 13.875, -1.026)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(2.45, 2.3, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Wall5" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D5"]
+transform = Transform3D(9.55343e-15, -2.18557e-07, 5, -5, -2.18557e-07, 0, 2.18557e-07, -5, -2.18557e-07, -3.085, 10.5, -17.085)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(3.8, 2.3, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Wall6" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D5"]
+transform = Transform3D(9.55343e-15, -2.18557e-07, 5, -5, -2.18557e-07, 0, 2.18557e-07, -5, -2.18557e-07, 8.424, 10.5, -17.076)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(3.8, 2.3, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Node3D3" type="Node3D" parent="NavigationRegion3D/MiddleWalls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 110.83, 0, 3.22)
+
+[node name="Wall" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D3"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, 1.575, 4, 0)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(1.2, 5.29, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Node3D4" type="Node3D" parent="NavigationRegion3D/MiddleWalls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -106.435, 0, 3.22)
+
+[node name="Wall" type="CSGBox3D" parent="NavigationRegion3D/MiddleWalls/Node3D4"]
+transform = Transform3D(-2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0, 0, 5, 1.575, 4, 0)
+material_override = ExtResource("1_r5hui")
+use_collision = true
+size = Vector3(1.2, 5.29, 0.05)
+material = ExtResource("2_67tf7")
+
+[node name="Library" parent="NavigationRegion3D" instance=ExtResource("7_u1gyl")]
+
+[node name="Collectable" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.55, 0)
+
+[node name="Marker3D" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.3337, 1.07791, 58.6361)
+
+[node name="Marker3D2" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.6337, 1.06959, 53.6512)
+
+[node name="Marker3D3" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 83.1337, 1.06701, 89.0012)
+
+[node name="Marker3D4" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.2186, 1.06701, 65.3291)
+
+[node name="Marker3D5" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.393, 1.06701, 81.2767)
+
+[node name="Marker3D6" type="Marker3D" parent="Collectable"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -31.057, 1.46138, 49.0483)
+
+[node name="Marker3D7" type="Marker3D" parent="Collectable"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -92.757, 1.46138, 57.0343)
+
+[node name="Marker3D8" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.357, 0.618379, 77.1256)
+
+[node name="Marker3D9" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.557, 2.1, 105.242)
+
+[node name="Marker3D10" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88.257, 2.13372, 91.0919)
+
+[node name="Marker3D11" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.9512, 1.03372, -59.2733)
+
+[node name="Marker3D12" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.3012, 0.68372, -84.6767)
+
+[node name="Marker3D13" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.3512, 0.724559, -27.1616)
+
+[node name="Marker3D14" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -96.4512, 0.68372, -84.8244)
+
+[node name="Marker3D15" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.2512, 0.724559, -41.9081)
+
+[node name="Marker3D16" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.7988, 0.230206, -40.4081)
+
+[node name="Marker3D17" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.1302, 0.230206, -65.8233)
+
+[node name="Marker3D18" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.0302, 0.505937, -80.3767)
+
+[node name="Marker3D19" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.6302, 0.230206, -34.0116)
+
+[node name="Marker3D20" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.9802, 0.230206, -85.6244)
+
+[node name="Marker3D21" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.7802, 1.06701, 30.5919)
+
+[node name="Marker3D22" type="Marker3D" parent="Collectable"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -15.6398, 1.46138, 57.2069)
+
+[node name="Marker3D23" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.6913, 0.67372, -100.573)
+
+[node name="Marker3D24" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.2087, 0.495713, -96.2267)
+
+[node name="Marker3D25" type="Marker3D" parent="Collectable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.6087, 1.06959, 53.9884)
+
+[node name="Pebbles" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.6, 0.446849, -71.02)
+
+[node name="Node3D102" parent="Pebbles" instance=ExtResource("7_1701v")]
+transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, 5.7, 0.5, -23.98)
+
+[node name="Node3D106" parent="Pebbles" instance=ExtResource("7_1701v")]
+transform = Transform3D(0.422618, 0, -0.906308, 0, 1, 0, 0.906308, 0, 0.422618, 20.6, 0.5, -31.2)
+
+[node name="Node3D107" parent="Pebbles" instance=ExtResource("7_1701v")]
+transform = Transform3D(0.939692, 0, -0.34202, 0, 1, 0, 0.34202, 0, 0.939692, 17.45, 0.5, -21.6)
+
+[node name="Node3D103" parent="Pebbles" instance=ExtResource("7_1701v")]
+transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, 19.75, 0.5, -2.36501)
+
+[node name="Node3D104" parent="Pebbles" instance=ExtResource("7_1701v")]
+transform = Transform3D(0.996195, 0, -0.0871561, 0, 1, 0, 0.0871561, 0, 0.996195, 18.45, 0.5, 10.185)
+
+[node name="Node3D105" parent="Pebbles" instance=ExtResource("7_1701v")]
+transform = Transform3D(0.939692, 0, -0.34202, 0, 1, 0, 0.34202, 0, 0.939692, 12.65, 0.5, -8.01501)
+
+[node name="Lights" type="Node3D" parent="."]
+transform = Transform3D(8.9407e-08, 0, -1, 0, 1, 0, 1, 0, 8.9407e-08, 12.1, 0.81044, -0.470001)
+
+[node name="Node3D4" parent="Lights" instance=ExtResource("8_pvt4j")]
+transform = Transform3D(8.9407e-08, 0, 1, 0, 1, 0, -1, 0, 8.9407e-08, 7.87501, 0.630174, 6.655)
+
+[node name="Node3D" parent="Lights" instance=ExtResource("9_3afdp")]
+transform = Transform3D(8.9407e-08, 0, 1, 0, 1, 0, -1, 0, 8.9407e-08, 7.37501, 0.59142, 7.155)
+
+[node name="Node3D5" parent="Lights" instance=ExtResource("10_yapmj")]
+transform = Transform3D(3.57047e-08, 0, 0.411543, 0, 0.529906, 0, -0.39935, 0, 3.67948e-08, 8.467, 0.711973, 5.7674)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 2.7, 11.4, -124.15)
+layers = 2
+material_override = SubResource("StandardMaterial3D_yixls")
+mesh = SubResource("PlaneMesh_wnq24")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.65, 19.7, -114.45)
+material_override = SubResource("StandardMaterial3D_gfdoy")
+mesh = SubResource("PlaneMesh_mj1le")
+
+[node name="FinishLine" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 0, -116.632)
+script = ExtResource("14_eue5k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FinishLine"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.325, -4.8)
+shape = SubResource("BoxShape3D_6ccyu")
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.335, 1.01832, -101.85)
+
+[node name="DoorSimple" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(185, 0, 0, 0, -8.08661e-06, 185, 0, -185, -8.08661e-06, 0, 0, 0)
+mesh = ExtResource("11_6mgqi")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D/DoorSimple"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/DoorSimple/StaticBody3D"]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -0.00625, 0.00135136, 0.0075)
+shape = SubResource("BoxShape3D_nfgyq")
+
+[node name="FinishLight" type="Node3D" parent="."]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="FinishLight"]
+transform = Transform3D(1, 0, 0, 0, -0.866025, 0.5, 0, -0.5, -0.866025, 2.7, 16.15, -130.55)
+light_volumetric_fog_energy = 0.0
+shadow_enabled = true
+spot_range = 49.2
+spot_attenuation = -1.26
+spot_angle = 21.5206
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="FinishLight"]
+transform = Transform3D(1, 0, 0, 0, -0.965926, 0.258819, 0, -0.258819, -0.965926, 2.7, 8.6, -143.25)
+light_volumetric_fog_energy = 0.0
+shadow_enabled = true
+shadow_reverse_cull_face = true
+spot_range = 39.35
+spot_attenuation = -2.09
+spot_angle = 19.8011
+
+[node name="OmniLight3D" type="OmniLight3D" parent="FinishLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 16.9, -121.056)
+light_volumetric_fog_energy = 0.0
+omni_range = 17.4
+omni_attenuation = -5.0
+
+[connection signal="cleared" from="Player" to="." method="_on_player_cleared"]
+[connection signal="body_entered" from="FinishLine" to="Player" method="_on_finish_line_body_entered"]
+[connection signal="body_entered" from="FinishLine" to="FinishLine" method="_on_body_entered"]
+
+[editable path="Player"]
+[editable path="Player/Head/Player Lamp"]
+[editable path="Player/PauseUI"]
+[editable path="Player/Map"]

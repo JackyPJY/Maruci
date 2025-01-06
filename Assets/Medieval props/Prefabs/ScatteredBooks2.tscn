@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bseduniwsic4y"]
+
+[ext_resource type="PackedScene" uid="uid://bokwb8rroqcwy" path="res://Assets/Medieval props/Prefabs/BookV2.prefab.scn" id="1_sqta7"]
+[ext_resource type="PackedScene" uid="uid://deohscvsd8uq3" path="res://Assets/Medieval props/Prefabs/BookV1.prefab.scn" id="2_twn1s"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="BookV12" parent="." instance=ExtResource("1_sqta7")]
+transform = Transform3D(2.45167e-07, 0.295635, 0.170685, 0.34137, -4.22051e-08, -4.17232e-07, -3.40231e-07, 0.170685, -0.295635, -0.46, 0.31, 0.02)
+
+[node name="BookV14" parent="." instance=ExtResource("1_sqta7")]
+transform = Transform3D(-0.123984, 0.118414, 0.295194, 0.316202, 0.0117059, 0.128112, 0.0343167, 0.31996, -0.113935, -1.165, 0.225, 1.33)
+
+[node name="BookV13" parent="." instance=ExtResource("1_sqta7")]
+transform = Transform3D(4.22051e-08, 0.34137, -2.11025e-08, 0.34137, -4.22051e-08, -4.17233e-07, -4.17233e-07, -2.11026e-08, -0.34137, -0.28, 0.11, 0.04)
+
+[node name="BookV1" parent="." instance=ExtResource("2_twn1s")]
+transform = Transform3D(-1.99875e-09, -0.170652, -0.295579, -0.341305, 2.98378e-08, -1.49189e-08, 3.32998e-08, 0.295579, -0.170652, 0, 0.11, 0.925)
+
+[node name="BookV2" parent="." instance=ExtResource("2_twn1s")]
+transform = Transform3D(-2.98378e-08, -0.341305, 1.49012e-08, -0.341305, 2.98378e-08, -1.49189e-08, 1.49189e-08, -1.49012e-08, -0.341305, -0.0600001, 0.325, 1.19)
+
+[node name="BookV3" parent="." instance=ExtResource("2_twn1s")]
+transform = Transform3D(-0.27958, -0.195764, -3.6739e-09, -0.195764, 0.27958, -2.07634e-08, 1.49189e-08, -1.49012e-08, -0.341305, 0.465, 0.355, 0.735)

@@ -1,0 +1,69 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://et2y2va8127c"
+path="res://.godot/imported/plate1_low.fbx-6c04eb059c1875176b07f05dbd606dee.scn"
+
+[deps]
+
+source_file="res://Assets/propsv2/plate1/plate1_low.fbx"
+dest_files=["res://.godot/imported/plate1_low.fbx-6c04eb059c1875176b07f05dbd606dee.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+meshes/ensure_tangents=1
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=24.0
+animation/trimming=true
+animation/remove_immutable_tracks=false
+animation/import_rest_as_RESET=true
+import_script/path=""
+_subresources={
+"animations": {},
+"materials": {
+"plate1": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/propsv2/plate1/plate1.material"
+}
+},
+"meshes": {
+"Root Scene_plate1": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/plate1/extracted/plate1_low.plate1.mesh"
+},
+"plate1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/propsv2/plate1/extracted/plate1_low.plate1.mesh"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277778,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvwtx6wrf55h"]
+
+[ext_resource type="ArrayMesh" uid="uid://dsiby5n724e7" path="res://Assets/medieval-door-pack/Individuals/Door Cave.res" id="1_h0ikj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3le3x"]
+size = Vector3(1.89, 3.6, 0.23)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DoorCave" type="MeshInstance3D" parent="."]
+transform = Transform3D(200, 0, 0, 0, -8.74228e-06, 200, 0, -200, -8.74228e-06, 0, 0, 0)
+mesh = ExtResource("1_h0ikj")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.945, 1.81, 0.115)
+shape = SubResource("BoxShape3D_3le3x")

@@ -1,0 +1,237 @@
+[gd_scene load_steps=23 format=3 uid="uid://c0pixmyr7xaik"]
+
+[ext_resource type="FontFile" uid="uid://cyl73mjyqjjgn" path="res://Assets/Text Font/Perdition-jEwpv.ttf" id="1_8cyhx"]
+[ext_resource type="FontFile" uid="uid://1ua6mst1mq26" path="res://Assets/Text Font/PerditionBold-z8ZY1.ttf" id="2_x4sra"]
+[ext_resource type="FontFile" uid="uid://cdtab0nrd6plv" path="res://Assets/Text Font/PerditionCondensed-51Agz.ttf" id="3_jbc0i"]
+[ext_resource type="FontFile" uid="uid://motf7nbd2v80" path="res://Assets/Text Font/PerditionItalic-GOmGa.ttf" id="4_wacmq"]
+[ext_resource type="FontFile" uid="uid://cxdiopbreyt56" path="res://Assets/Text Font/PerditionExpanded-6Yqo6.ttf" id="5_vw7fk"]
+[ext_resource type="PackedScene" uid="uid://coyy1mo6xr5dd" path="res://Scene/install_sounds.tscn" id="6_5hyce"]
+[ext_resource type="Script" path="res://Scripts/end_game.gd" id="6_dkl82"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b6237"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ndtne"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vcwk4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ex2vq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w7i1y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xli8a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rtnfy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_irm7e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f1kme"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q8w1c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wl85r"]
+
+[sub_resource type="Theme" id="Theme_phe12"]
+Button/colors/font_hover_color = Color(1, 0.384314, 0, 1)
+Button/colors/font_hover_pressed_color = Color(0.376471, 0.12549, 0, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 80
+Button/fonts/font = ExtResource("1_8cyhx")
+Button/styles/disabled = SubResource("StyleBoxEmpty_b6237")
+Button/styles/disabled_mirrored = SubResource("StyleBoxEmpty_ndtne")
+Button/styles/focus = SubResource("StyleBoxEmpty_vcwk4")
+Button/styles/hover = SubResource("StyleBoxEmpty_ex2vq")
+Button/styles/hover_mirrored = SubResource("StyleBoxEmpty_w7i1y")
+Button/styles/hover_pressed = SubResource("StyleBoxEmpty_xli8a")
+Button/styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_rtnfy")
+Button/styles/normal = SubResource("StyleBoxEmpty_irm7e")
+Button/styles/normal_mirrored = SubResource("StyleBoxEmpty_f1kme")
+Button/styles/pressed = SubResource("StyleBoxEmpty_q8w1c")
+Button/styles/pressed_mirrored = SubResource("StyleBoxEmpty_wl85r")
+Label/font_sizes/font_size = 80
+Label/fonts/font = ExtResource("2_x4sra")
+RichTextLabel/fonts/bold_font = ExtResource("2_x4sra")
+RichTextLabel/fonts/bold_italics_font = ExtResource("3_jbc0i")
+RichTextLabel/fonts/italics_font = ExtResource("4_wacmq")
+RichTextLabel/fonts/mono_font = ExtResource("5_vw7fk")
+RichTextLabel/fonts/normal_font = ExtResource("1_8cyhx")
+
+[sub_resource type="Animation" id="Animation_vj02x"]
+resource_name = "EndGame"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6kkq7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2dl0r"]
+_data = {
+"EndGame": SubResource("Animation_vj02x"),
+"RESET": SubResource("Animation_6kkq7")
+}
+
+[node name="EndGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_phe12")
+script = ExtResource("6_dkl82")
+
+[node name="Inventory_Background" type="ColorRect" parent="."]
+visible = false
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Pause_Main_Menu" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 309.0
+offset_right = -309.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 80
+
+[node name="Inventory_Background" type="ColorRect" parent="Pause_Main_Menu"]
+show_behind_parent = true
+z_index = 1
+layout_mode = 2
+color = Color(0.368627, 0.121569, 0, 0.286275)
+
+[node name="Main_Menu" type="MarginContainer" parent="Pause_Main_Menu"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 25
+
+[node name="General" type="VBoxContainer" parent="Pause_Main_Menu/Main_Menu"]
+layout_mode = 2
+theme_override_constants/separation = 45
+
+[node name="Title" type="Label" parent="Pause_Main_Menu/Main_Menu/General"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "You Escaped"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Pause_Main_Menu/Main_Menu/General"]
+layout_mode = 2
+
+[node name="Scoring" type="Label" parent="Pause_Main_Menu/Main_Menu/General/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 60
+text = "Time Remained:"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Pause_Main_Menu/Main_Menu/General/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Minutes" type="Label" parent="Pause_Main_Menu/Main_Menu/General/VBoxContainer/HBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 70
+text = "60"
+
+[node name="Middle" type="Label" parent="Pause_Main_Menu/Main_Menu/General/VBoxContainer/HBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 70
+text = " : "
+
+[node name="Seconds" type="Label" parent="Pause_Main_Menu/Main_Menu/General/VBoxContainer/HBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 70
+text = "60"
+
+[node name="Main_Menu" type="MarginContainer" parent="Pause_Main_Menu/Main_Menu/General"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 20
+
+[node name="ColorRect" type="ColorRect" parent="Pause_Main_Menu/Main_Menu/General/Main_Menu"]
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.0807833, 0.0807833, 0.0807833, 1)
+
+[node name="Main_Menu2" type="MarginContainer" parent="Pause_Main_Menu/Main_Menu/General/Main_Menu"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 10
+
+[node name="General" type="VBoxContainer" parent="Pause_Main_Menu/Main_Menu/General/Main_Menu/Main_Menu2"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 50
+
+[node name="Return Menu" type="Button" parent="Pause_Main_Menu/Main_Menu/General/Main_Menu/Main_Menu2/General"]
+layout_mode = 2
+text = "Return to Menu"
+
+[node name="InstallSounds" parent="Pause_Main_Menu" instance=ExtResource("6_5hyce")]
+root_path = NodePath("../..")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2dl0r")
+}
+
+[connection signal="pressed" from="Pause_Main_Menu/Main_Menu/General/Main_Menu/Main_Menu2/General/Return Menu" to="." method="_on_return_menu_pressed"]

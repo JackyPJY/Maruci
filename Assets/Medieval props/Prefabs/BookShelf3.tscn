@@ -1,0 +1,95 @@
+[gd_scene load_steps=5 format=3 uid="uid://dppt7tmiu0ol"]
+
+[ext_resource type="PackedScene" uid="uid://b8ymll3lm5e2s" path="res://Assets/Medieval props/Prefabs/ShelfV1.prefab.scn" id="1_yquqw"]
+[ext_resource type="PackedScene" uid="uid://deohscvsd8uq3" path="res://Assets/Medieval props/Prefabs/BookV1.prefab.scn" id="2_gop1h"]
+[ext_resource type="PackedScene" uid="uid://bokwb8rroqcwy" path="res://Assets/Medieval props/Prefabs/BookV2.prefab.scn" id="3_52dti"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vxi1r"]
+size = Vector3(1.1, 7.2, 7.85)
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="ShelfV1" parent="." instance=ExtResource("1_yquqw")]
+
+[node name="BookV1" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(4.47567e-08, 0.341305, 1.49189e-08, -2.1201e-22, -1.49189e-08, 0.341305, 0.341305, -4.47567e-08, -1.95638e-15, -0.0562501, 0.25, 7.44875)
+
+[node name="BookV2" parent="." instance=ExtResource("3_52dti")]
+transform = Transform3D(4.47653e-08, 0.34137, 1.49217e-08, 1.06025e-22, -1.49217e-08, 0.34137, 0.34137, -4.47653e-08, -1.95675e-15, -0.0562501, 0.25, 7.69875)
+
+[node name="BookV3" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(4.2197e-08, 0.341305, -2.10985e-08, 0.341305, -4.2197e-08, 0, 0, -2.10985e-08, -0.341305, -0.0562501, 0.585, 1.15875)
+
+[node name="BookV34" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(4.47567e-08, 0.341305, 1.49189e-08, 0.341305, -4.47567e-08, -1.49189e-08, -1.49189e-08, 1.49189e-08, -0.341305, -0.0562501, 0.365, 1.00875)
+
+[node name="BookV9" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(4.2197e-08, 0.341305, -2.10985e-08, 0.241339, -1.49189e-08, 0.241339, 0.241339, -4.47567e-08, -0.241339, -0.0562501, 0.34, 1.66875)
+
+[node name="BookV10" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(4.2197e-08, 0.341305, -2.10985e-08, 0.279581, -2.24642e-08, 0.195764, 0.195764, -4.14861e-08, -0.279581, -0.0562501, 0.356588, 2.19755)
+
+[node name="BookV4" parent="." instance=ExtResource("3_52dti")]
+transform = Transform3D(3.78995e-08, 0.34137, -2.81108e-08, 0.309386, -2.24684e-08, 0.144269, 0.144269, -4.14941e-08, -0.309386, -0.0562501, 0.365, 6.95375)
+
+[node name="BookV5" parent="." instance=ExtResource("3_52dti")]
+transform = Transform3D(3.78995e-08, 0.34137, -2.81109e-08, 0.279634, -1.49217e-08, 0.195802, 0.195802, -4.47653e-08, -0.279634, -0.0562501, 0.34, 6.31875)
+
+[node name="BookV6" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(4.2197e-08, 0.341305, -2.10985e-08, 0.241339, -1.49189e-08, 0.241339, 0.241339, -4.47567e-08, -0.241339, -0.0562501, 0.34, 5.77875)
+
+[node name="BookV8" parent="." instance=ExtResource("3_52dti")]
+transform = Transform3D(4.47653e-08, 0.34137, 1.49217e-08, 1.06025e-22, -1.49217e-08, 0.34137, 0.34137, -4.47653e-08, -1.95675e-15, -0.0562501, 0.25, 7.19875)
+
+[node name="BookV11" parent="." instance=ExtResource("3_52dti")]
+transform = Transform3D(4.22051e-08, 0.34137, -2.11025e-08, 0.309386, -2.93325e-08, 0.144269, 0.144269, -3.6962e-08, -0.309386, -0.0562501, 0.36, 2.87375)
+
+[node name="BookV12" parent="." instance=ExtResource("3_52dti")]
+transform = Transform3D(4.22051e-08, 0.34137, -2.11025e-08, 0.34137, -4.22051e-08, -4.17233e-07, -4.17233e-07, -2.11026e-08, -0.34137, -0.0562501, 0.363412, 5.50495)
+
+[node name="BookV13" parent="." instance=ExtResource("3_52dti")]
+transform = Transform3D(4.22051e-08, 0.34137, -2.11025e-08, 0.34137, -4.22051e-08, -4.17233e-07, -4.17233e-07, -2.11026e-08, -0.34137, -0.0562501, 0.583412, 5.24995)
+
+[node name="BookV18" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(3.1301e-08, 0.341305, 3.52985e-08, -0.170652, -1.49189e-08, 0.295579, 0.295579, -4.47567e-08, 0.170652, -0.0562501, 1.4, 6.04875)
+
+[node name="BookV19" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(3.6955e-08, 0.341305, 2.93269e-08, -0.116733, -1.49189e-08, 0.320722, 0.320722, -4.47567e-08, 0.116733, -0.0562501, 1.38, 6.44875)
+
+[node name="BookV20" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(3.93704e-08, 0.341305, 2.59944e-08, -0.0883362, -1.49189e-08, 0.329675, 0.329675, -4.47567e-08, 0.0883362, -0.0562501, 1.375, 6.75875)
+
+[node name="BookV21" parent="." instance=ExtResource("3_52dti")]
+transform = Transform3D(4.47653e-08, 0.34137, 1.49217e-08, 1.06025e-22, -1.49217e-08, 0.34137, 0.34137, -4.47653e-08, -1.95675e-15, -0.0562501, 1.35, 7.21375)
+
+[node name="BookV28" parent="." instance=ExtResource("3_52dti")]
+transform = Transform3D(9.46002e-09, 0.34137, 4.62287e-08, -0.295635, -1.49217e-08, 0.170685, 0.170685, -4.47653e-08, 0.295635, -0.0562501, 1.435, 5.29375)
+
+[node name="BookV22" parent="." instance=ExtResource("3_52dti")]
+transform = Transform3D(4.47653e-08, 0.34137, 1.49217e-08, 1.06025e-22, -1.49217e-08, 0.34137, 0.34137, -4.47653e-08, -1.95675e-15, -0.0562501, 1.35, 7.46375)
+
+[node name="BookV23" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(4.47567e-08, 0.341305, 1.49189e-08, -2.1201e-22, -1.49189e-08, 0.341305, 0.341305, -4.47567e-08, -1.95638e-15, -0.0562501, 1.35, 7.71375)
+
+[node name="BookV25" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(9.45821e-09, 0.341305, 4.62199e-08, -0.329675, -2.82667e-09, 0.0883361, 0.0883361, -4.7093e-08, 0.329675, -0.0562501, 1.45, 4.41875)
+
+[node name="BookV29" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(3.52985e-08, 0.341305, -3.1301e-08, 0.295579, -1.49189e-08, 0.170652, 0.170652, -4.47567e-08, -0.295579, -0.0562501, 1.43, 1.45375)
+
+[node name="BookV30" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(2.93269e-08, 0.341305, -3.6955e-08, 0.320722, -1.49189e-08, 0.116733, 0.116733, -4.47567e-08, -0.320722, -0.0562501, 1.455, 2.16375)
+
+[node name="BookV31" parent="." instance=ExtResource("2_gop1h")]
+transform = Transform3D(2.59945e-08, 0.341305, -3.93704e-08, 0.329675, -1.49189e-08, 0.0883362, 0.0883362, -4.47567e-08, -0.329675, -0.0562501, 1.45, 3.05375)
+
+[node name="BookV32" parent="." instance=ExtResource("3_52dti")]
+transform = Transform3D(4.62287e-08, 0.34137, -9.46001e-09, 0.34137, -4.62286e-08, -5.96046e-08, -5.96046e-08, -9.46003e-09, -0.34137, -0.0562501, 1.455, 1.00375)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.54979e-08, 0.5, 0.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.58933e-08, 0.15, 3.425)
+shape = SubResource("BoxShape3D_vxi1r")

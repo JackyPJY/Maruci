@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://3lsnho5fimdi"]
+
+[ext_resource type="ArrayMesh" uid="uid://dby3k80bwxdjv" path="res://Assets/medieval-door-pack/Individuals/Door Castle.res" id="1_5ali5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4w70j"]
+size = Vector3(0.0205811, 0.00488281, 0.0362396)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DoorCastle" type="MeshInstance3D" parent="."]
+transform = Transform3D(214.424, 0, 0, 0, -4.27562e-06, 214.424, 0, -97.8148, -9.37278e-06, -2.4667, 0.000504731, -0.180991)
+mesh = ExtResource("1_5ali5")
+skeleton = NodePath("../../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="DoorCastle"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorCastle/StaticBody3D"]
+transform = Transform3D(0.993446, 0, 0, 0, 1, 2.13163e-14, 0, 0, 1.01257, -3.85549e-05, -1.16415e-10, 0.0184953)
+shape = SubResource("BoxShape3D_4w70j")
