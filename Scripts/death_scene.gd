@@ -5,6 +5,7 @@ extends Node3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$AudioStreamPlayer.play()
 	anim_player.play("Attack")
 
 func _on_uc_anim_play_animation_finished(anim_name: StringName) -> void:
@@ -16,7 +17,7 @@ func _on_uc_anim_play_animation_finished(anim_name: StringName) -> void:
 		$UI/Pause_Main_Menu.visible = !$UI/Pause_Main_Menu.visible
 
 func _on_try_again_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scene/Path_Finding.tscn")
+	get_tree().change_scene_to_file("res://Scene/PlayMap.tscn")
 
 func _on_return_menu_2_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scene/MainMenu.tscn")

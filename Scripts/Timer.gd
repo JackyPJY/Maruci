@@ -1,8 +1,8 @@
 extends Panel
 class_name deathTimer
 
-#var time = Difficulty.deathTimer
-var time = 300
+var time = Difficulty.deathTimer
+#var time = 300
 var minutes: int = 0
 var seconds: int = 0
 

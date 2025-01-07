@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://1ajbrjqg6pg2"
+path="res://.godot/imported/Maruci Chase Song.wav-d8b3ba34222d5fc74115bd8a87b6c605.sample"
+
+[deps]
+
+source_file="res://Assets/Sound/SFX/Maruci Chase Song.wav"
+dest_files=["res://.godot/imported/Maruci Chase Song.wav-d8b3ba34222d5fc74115bd8a87b6c605.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -50,7 +50,9 @@ func _on_back_pressed() -> void:
 func _on_return_menu_pressed() -> void:
 	$ColorRect.visible = !$ColorRect.visible
 	$AnimationPlayer.play("PauseScreen")
-	await get_tree().create_timer(2).timeout
+	await get_tree().create_timer(1).timeout
+	get_tree().paused = false
+	Global.pause = false
 	get_tree().change_scene_to_file("res://Scene/MainMenu.tscn")
 
 func _on_continue_pressed() -> void:

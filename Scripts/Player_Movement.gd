@@ -6,8 +6,7 @@ var can_start_timer = true
 var time_to_wait
 var s_timer = 0
 var regen_value
-#var staminaMax = Difficulty.staminaDiffMax
-var staminaMax = 100
+var staminaMax = Difficulty.staminaDiffMax
 var regenDiffValue = Difficulty.staminaDiffRegen
 var staminaDiffTimer = Difficulty.staminaDiffTimer
 

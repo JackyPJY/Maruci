@@ -2,8 +2,7 @@ extends Node
 
 var difficulty : int
 
-#var pickUpRequirement : int
-var pickUpRequirement = 5
+var pickUpRequirement : int
 
 var staminaDiffMax : float
 var staminaDiffTimer : float
@@ -25,13 +24,13 @@ func _update():
 			staminaDiffMax = 200.0
 			staminaDiffTimer = 0
 			staminaDiffRegen = 0
-			deathTimer = 1200
+			deathTimer = 800
 
 			ucWanderTimer = 25
 			ucIdleTimer = 20
 			ucIdleDiffTimer = 0
 			ucIdleCycle = 3
-			ucWalkingSpeed = 7
+			ucWalkingSpeed = 5
 			ucChasingSpeed = 7
 			ucChaseTimer = 5
 		2:
@@ -49,7 +48,7 @@ func _update():
 			ucChaseTimer = 7
 		3:
 			pickUpRequirement = 10
-			staminaDiffMax = 75.0
+			staminaDiffMax = 100.0
 			staminaDiffTimer = 1
 			staminaDiffRegen = 1
 			deathTimer = 300
@@ -57,8 +56,8 @@ func _update():
 			ucWanderTimer = 17
 			ucIdleTimer = 10
 			ucIdleCycle = 1
-			ucWalkingSpeed = 13
-			ucChasingSpeed = 15
+			ucWalkingSpeed = 10
+			ucChasingSpeed = 13
 			ucChaseTimer = 10
 
 

@@ -1,10 +1,11 @@
-[gd_scene load_steps=30 format=3 uid="uid://4rf8b4e4vhwn"]
+[gd_scene load_steps=55 format=3 uid="uid://4rf8b4e4vhwn"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_f2y3e"]
 [ext_resource type="PackedScene" uid="uid://dfe31afh2scn" path="res://Assets/Medieval props/Prefabs/LanternV3.prefab.scn" id="2_bc3gk"]
 [ext_resource type="PackedScene" uid="uid://gw43mpgc38j0" path="res://Assets/Medieval props/Prefabs/TableV1.prefab.scn" id="3_44k5r"]
 [ext_resource type="FontFile" uid="uid://cyten8y2m54aa" path="res://Assets/Text Font/PentagramsSalemica-B978.ttf" id="4_tr4up"]
 [ext_resource type="FontFile" uid="uid://cyl73mjyqjjgn" path="res://Assets/Text Font/Perdition-jEwpv.ttf" id="5_d4mdr"]
+[ext_resource type="Texture2D" uid="uid://d3sojm8a3wiuv" path="res://Assets/Instructions.png" id="7_ngxn4"]
 [ext_resource type="PackedScene" uid="uid://coyy1mo6xr5dd" path="res://Scene/install_sounds.tscn" id="7_uhwvh"]
 [ext_resource type="Animation" uid="uid://do3gebtj1wj31" path="res://Assets/Black_Background.res" id="8_l3so4"]
 [ext_resource type="Animation" uid="uid://dqd2fr2k5nqc1" path="res://MainMenu_Camera.res" id="8_wfk5s"]
@@ -57,6 +58,34 @@ base_font = ExtResource("4_tr4up")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pdcfo"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_le7rl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ccps"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yrkiy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ws27"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v2xfl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gf620"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aedjp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ph4j0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_esbwo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_86f08"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fni6v"]
+
+[sub_resource type="MeshTexture" id="MeshTexture_obv5u"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cppdr"]
+texture = SubResource("MeshTexture_obv5u")
+modulate_color = Color(0, 0, 0, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dn30k"]
 bg_color = Color(0.369419, 0.121733, 0, 1)
 corner_radius_top_left = 4
@@ -66,6 +95,28 @@ corner_radius_bottom_left = 4
 
 [sub_resource type="Theme" id="Theme_vqhm1"]
 HSlider/styles/grabber_area = SubResource("StyleBoxFlat_dn30k")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vv2cv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ermh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qse1p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xrgek"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wuhti"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5rmtm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0yxvy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f7w4c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xm7ka"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k4d7v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wyllf"]
 
 [sub_resource type="Animation" id="Animation_jdy51"]
 resource_name = "MainMenu_Ost"
@@ -283,6 +334,33 @@ text = "Settings"
 custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 
+[node name="Help" type="Button" parent="UI/Main_Menu/General"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_colors/font_hover_pressed_color = Color(0.37513, 0.124111, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0.384314, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_d4mdr")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxEmpty_le7rl")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_2ccps")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_yrkiy")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_1ws27")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_v2xfl")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_gf620")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_aedjp")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ph4j0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_esbwo")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_86f08")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fni6v")
+text = "Help"
+alignment = 0
+
+[node name="Filler4" type="MarginContainer" parent="UI/Main_Menu/General"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
 [node name="Quit" type="Button" parent="UI/Main_Menu/General"]
 layout_mode = 2
 size_flags_horizontal = 0
@@ -305,15 +383,18 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ffc12")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_pdcfo")
 text = "Quit"
 
-[node name="Game_State" type="VBoxContainer" parent="UI/Main_Menu"]
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Main_Menu"]
 visible = false
 layout_mode = 2
 
-[node name="Filler" type="MarginContainer" parent="UI/Main_Menu/Game_State"]
+[node name="Game_State" type="VBoxContainer" parent="UI/Main_Menu/HBoxContainer"]
+layout_mode = 2
+
+[node name="Filler" type="MarginContainer" parent="UI/Main_Menu/HBoxContainer/Game_State"]
 custom_minimum_size = Vector2(0, 300)
 layout_mode = 2
 
-[node name="Easy" type="Button" parent="UI/Main_Menu/Game_State"]
+[node name="Easy" type="Button" parent="UI/Main_Menu/HBoxContainer/Game_State"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
@@ -335,11 +416,11 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ffc12")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_pdcfo")
 text = "Easy"
 
-[node name="Filler2" type="MarginContainer" parent="UI/Main_Menu/Game_State"]
+[node name="Filler2" type="MarginContainer" parent="UI/Main_Menu/HBoxContainer/Game_State"]
 custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 
-[node name="Medium" type="Button" parent="UI/Main_Menu/Game_State"]
+[node name="Medium" type="Button" parent="UI/Main_Menu/HBoxContainer/Game_State"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
@@ -361,11 +442,11 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ffc12")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_pdcfo")
 text = "Medium"
 
-[node name="Filler3" type="MarginContainer" parent="UI/Main_Menu/Game_State"]
+[node name="Filler3" type="MarginContainer" parent="UI/Main_Menu/HBoxContainer/Game_State"]
 custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 
-[node name="Hard" type="Button" parent="UI/Main_Menu/Game_State"]
+[node name="Hard" type="Button" parent="UI/Main_Menu/HBoxContainer/Game_State"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
@@ -387,11 +468,11 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ffc12")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_pdcfo")
 text = "Hard"
 
-[node name="Filler4" type="MarginContainer" parent="UI/Main_Menu/Game_State"]
+[node name="Filler4" type="MarginContainer" parent="UI/Main_Menu/HBoxContainer/Game_State"]
 custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 
-[node name="Back" type="Button" parent="UI/Main_Menu/Game_State"]
+[node name="Back" type="Button" parent="UI/Main_Menu/HBoxContainer/Game_State"]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
@@ -412,6 +493,29 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_gb8h7")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ffc12")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_pdcfo")
 text = "Back"
+
+[node name="Filler5" type="MarginContainer" parent="UI/Main_Menu/HBoxContainer"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_constants/margin_left = 185
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/Main_Menu/HBoxContainer"]
+layout_mode = 2
+
+[node name="DifficultyExplainer" type="VBoxContainer" parent="UI/Main_Menu/HBoxContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Filler6" type="MarginContainer" parent="UI/Main_Menu/HBoxContainer/MarginContainer/DifficultyExplainer"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_constants/margin_left = 185
+
+[node name="Displayer" type="Label" parent="UI/Main_Menu/HBoxContainer/MarginContainer/DifficultyExplainer"]
+visible = false
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_d4mdr")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxTexture_cppdr")
 
 [node name="InstallSounds" parent="UI" instance=ExtResource("7_uhwvh")]
 root_path = NodePath("..")
@@ -534,6 +638,89 @@ layout_mode = 2
 custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 
+[node name="MarginContainer2" type="MarginContainer" parent="UI"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -582.0
+offset_top = -310.0
+offset_right = 582.0
+offset_bottom = 311.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+
+[node name="Settings_Background" type="ColorRect" parent="UI/MarginContainer2"]
+show_behind_parent = true
+layout_mode = 2
+color = Color(0.207843, 0.0823529, 0, 0.603922)
+
+[node name="Settings" type="MarginContainer" parent="UI/MarginContainer2"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MarginContainer2/Settings"]
+layout_mode = 2
+
+[node name="Help" type="Label" parent="UI/MarginContainer2/Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_d4mdr")
+theme_override_font_sizes/font_size = 115
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pdcfo")
+text = "Help"
+
+[node name="TextureRect" type="TextureRect" parent="UI/MarginContainer2/Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("7_ngxn4")
+
+[node name="Filler" type="MarginContainer" parent="UI/MarginContainer2/Settings/VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="Help2" type="Label" parent="UI/MarginContainer2/Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_d4mdr")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pdcfo")
+text = "Get Scroll Before Timer Runs Out"
+
+[node name="Back2" type="Button" parent="UI/MarginContainer2/Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_colors/font_hover_pressed_color = Color(0.37513, 0.124111, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0.384314, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_d4mdr")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vv2cv")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5ermh")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_qse1p")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_xrgek")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_wuhti")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5rmtm")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0yxvy")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_f7w4c")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xm7ka")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_k4d7v")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wyllf")
+text = "Back"
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_7sbnl")
@@ -554,11 +741,14 @@ bus = &"Music"
 [connection signal="pressed" from="UI/Main_Menu/General/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="UI/Main_Menu/General/Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="UI/Main_Menu/General/Settings" to="UI" method="_on_settings_pressed"]
-[connection signal="pressed" from="UI/Main_Menu/Game_State/Easy" to="." method="_on_easy_pressed"]
-[connection signal="pressed" from="UI/Main_Menu/Game_State/Easy" to="UI/Main_Menu/Game_State/Easy" method="_MainMenuStart_on_pressed"]
-[connection signal="pressed" from="UI/Main_Menu/Game_State/Medium" to="." method="_on_medium_pressed"]
-[connection signal="pressed" from="UI/Main_Menu/Game_State/Hard" to="." method="_on_hard_pressed"]
-[connection signal="pressed" from="UI/Main_Menu/Game_State/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="UI/Main_Menu/General/Help" to="." method="_on_help_pressed"]
+[connection signal="pressed" from="UI/Main_Menu/General/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="UI/Main_Menu/HBoxContainer/Game_State/Easy" to="." method="_on_easy_pressed"]
+[connection signal="pressed" from="UI/Main_Menu/HBoxContainer/Game_State/Easy" to="UI/Main_Menu/HBoxContainer/Game_State/Easy" method="_MainMenuStart_on_pressed"]
+[connection signal="pressed" from="UI/Main_Menu/HBoxContainer/Game_State/Medium" to="." method="_on_medium_pressed"]
+[connection signal="pressed" from="UI/Main_Menu/HBoxContainer/Game_State/Hard" to="." method="_on_hard_pressed"]
+[connection signal="pressed" from="UI/Main_Menu/HBoxContainer/Game_State/Back" to="." method="_on_back_pressed"]
 [connection signal="value_changed" from="UI/MarginContainer/Settings/VBoxContainer/HBoxContainer/MusicSlider" to="." method="_on_music_slider_value_changed"]
 [connection signal="value_changed" from="UI/MarginContainer/Settings/VBoxContainer/HBoxContainer/SFXSlider" to="." method="_on_sfx_slider_value_changed"]
 [connection signal="pressed" from="UI/MarginContainer/Settings/VBoxContainer/HBoxContainer/Back" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="UI/MarginContainer2/Settings/VBoxContainer/Back2" to="." method="_on_back_2_pressed"]
