@@ -175,3 +175,4 @@ func _on_finish_line_body_entered(body: Node3D) -> void:
 		$AnimationPlayer.play("WhiteScreen")
 		await get_tree().create_timer(2).timeout
 		get_tree().change_scene_to_file("res://Scene/end_game.tscn")
+		#get_tree().change_scene_to_file("res://Scene/MainMenu.tscn")

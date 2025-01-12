@@ -17,19 +17,6 @@ func _process(delta: float) -> void:
 			$".".visible = !$".".visible
 			Global.pause = false
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-			
-		#if mouse_mode == false:
-			#$PauseUI.visible = !$PauseUI.visible
-			#get_tree().paused = true
-			#Global.pause = true
-			#Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-			#mouse_mode = true
-		#elif mouse_mode == true:
-			#get_tree().paused = false
-			#$PauseUI.visible = !$PauseUI.visible
-			#Global.pause = false
-			#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-			#mouse_mode = false
 
 func _on_music_slider_value_changed(value: float) -> void:
 	AudioServer.set_bus_volume_db(Music_BUS_ID, linear_to_db(value))
@@ -61,7 +48,6 @@ func _on_continue_pressed() -> void:
 	Global.pause = false
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	Global.player.mouse_mode = false
-
 
 func _on_player_paused(bool: Variant) -> void:
 	timer = 3

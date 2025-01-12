@@ -279,7 +279,7 @@ transform = Transform3D(-0.778759, 0, 0.627324, 0, 1, 0, -0.627324, 0, -0.778759
 transform = Transform3D(0.894216, 0, 0.447634, 0, 1, 0, -0.447634, 0, 0.894216, -98.681, 0.928223, -35.6654)
 
 [node name="Node3D27" parent="Rocks" instance=ExtResource("3_cmmrg")]
-transform = Transform3D(0.960551, 0, 0.278103, 0, 1, 0, -0.278103, 0, 0.960551, 1.69999, 0.928223, -77.9405)
+transform = Transform3D(0.960551, 0, 0.278103, 0, 1, 0, -0.278103, 0, 0.960551, -1.50001, 0.928223, -77.9405)
 
 [node name="Node3D28" parent="Rocks" instance=ExtResource("3_cmmrg")]
 transform = Transform3D(0.0671965, 0, 0.99774, 0, 1, 0, -0.99774, 0, 0.0671965, -15.538, 0.928223, -89.7885)
@@ -288,7 +288,7 @@ transform = Transform3D(0.0671965, 0, 0.99774, 0, 1, 0, -0.99774, 0, 0.0671965, 
 transform = Transform3D(-0.404391, 0, -0.914586, 0, 1, 0, 0.914586, 0, -0.404391, -3.25321, 0.928223, -75.7455)
 
 [node name="Node3D29" parent="Rocks" instance=ExtResource("3_cmmrg")]
-transform = Transform3D(0.894216, 0, 0.447634, 0, 1, 0, -0.447634, 0, 0.894216, 2.36899, 0.928223, -86.9654)
+transform = Transform3D(0.894216, 0, 0.447634, 0, 1, 0, -0.447634, 0, 0.894216, -0.83101, 0.928223, -86.9654)
 
 [node name="Node3D30" parent="Rocks" instance=ExtResource("3_cmmrg")]
 transform = Transform3D(0.960551, 0, 0.278103, 0, 1, 0, -0.278103, 0, 0.960551, -100.6, 0.928223, -39.4905)
@@ -416,9 +416,6 @@ transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 
 [node name="Node3D35" parent="BookShelf" instance=ExtResource("3_4cu0p")]
 transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -66.8167, 2.4, -56.9722)
 
-[node name="Node3D36" parent="BookShelf" instance=ExtResource("3_4cu0p")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -77.7, 2.7, -61.25)
-
 [node name="Node3D37" parent="BookShelf" instance=ExtResource("11_b067r")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -77.55, 2.2, -67.4)
 
@@ -463,9 +460,6 @@ transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 
 
 [node name="Node3D48" parent="BookShelf" instance=ExtResource("3_4cu0p")]
 transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -76.9167, 2.7, -61.4722)
-
-[node name="Node3D49" parent="BookShelf" instance=ExtResource("3_4cu0p")]
-transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -77.0667, 2.4, -56.9722)
 
 [node name="Node3D50" parent="BookShelf" instance=ExtResource("3_4cu0p")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -88.5, 2.7, -61.25)
@@ -2720,17 +2714,11 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -57.95, 2.55, -75.45)
 [node name="Node3D871" parent="BookShelf" instance=ExtResource("11_b067r")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -67.45, 2.55, -56.45)
 
-[node name="Node3D872" parent="BookShelf" instance=ExtResource("11_b067r")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -67.45, 2.55, -75.45)
-
 [node name="Node3D873" parent="BookShelf" instance=ExtResource("11_b067r")]
 transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -66.6667, 2.55, -95.8722)
 
 [node name="Node3D874" parent="BookShelf" instance=ExtResource("11_b067r")]
 transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -66.6667, 2.55, -76.8722)
-
-[node name="Node3D875" parent="BookShelf" instance=ExtResource("11_b067r")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -77.7, 2.55, -56.45)
 
 [node name="Node3D876" parent="BookShelf" instance=ExtResource("11_b067r")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -77.7, 2.55, -75.45)

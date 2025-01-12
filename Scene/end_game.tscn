@@ -171,15 +171,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 70
-text = "60"
-
-[node name="Middle" type="Label" parent="Pause_Main_Menu/Main_Menu/General/VBoxContainer/HBoxContainer"]
-z_index = 1
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-theme_override_font_sizes/font_size = 70
-text = " : "
+text = "02:"
 
 [node name="Seconds" type="Label" parent="Pause_Main_Menu/Main_Menu/General/VBoxContainer/HBoxContainer"]
 z_index = 1
@@ -187,7 +179,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
 theme_override_font_sizes/font_size = 70
-text = "60"
+text = "35"
 
 [node name="Main_Menu" type="MarginContainer" parent="Pause_Main_Menu/Main_Menu/General"]
 layout_mode = 2

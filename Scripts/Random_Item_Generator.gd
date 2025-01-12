@@ -14,7 +14,10 @@ var importItems = []
 
 var remain = Difficulty.pickUpRequirement
 
+var played 
+
 func _ready():
+	played = false 
 	for i in 2:
 		_areas_full.append(get_random(_areas)) 
 		_areas_full.append(get_random(_areas2)) 
@@ -157,5 +160,8 @@ func _process(delta: float) -> void:
 	set_process(false)
 
 func _on_player_cleared() -> void:
+	if !played:
+		$AudioStreamPlayer5.play()
+		played = true
 	$Node3D/DoorSimple.hide()
 	$Node3D/DoorSimple/StaticBody3D/CollisionShape3D.disabled = true

@@ -14,14 +14,14 @@ var normalNoise
 var chaseNoise
 var playedOnce
 
-#@export var isJumpscare : bool
-
 #point of interest generator
 @onready var randomPos = Vector3(randf_range(-95, 100), position.y, randf_range(-95, 95))
 
 @onready var player = get_tree().get_first_node_in_group("Player")
 @onready var hasEntered = false
 @onready var noiseHeard = false
+@onready var walkNoiseHeard = false
+@onready var near = false
 
 @onready var wanderTimer = Difficulty.ucWanderTimer
 #@onready var wanderTimer = 15.0
@@ -65,17 +65,30 @@ func _ready():
 		
 func _process(delta):
 	#print(isChasing, " isChasing ", chaseTimer , " chaseTimer ",idleTimer , " idleTimer >= idleTimerMax ", innerTimer, " inner Remain Time ")
-	print(state_machine.get_current_node())
+	#print(state_machine.get_current_node())
+	
 	#Hearing Noise
 	if Global.stateCheck._current().name != "RunningPlayerState":
 		noiseHeard = false
 	else: if Global.stateCheck._current().name == "RunningPlayerState":
 		noiseHeard = true
 	
-	if(hasEntered):
-		if(noiseHeard) and $Instant_Ear.has_overlapping_bodies():
+	#if Global.stateCheck._current().name != "WalkingPlayerState":
+		#walkNoiseHeard = false
+	#else: if Global.stateCheck._current().name == "WalkingPlayerState":
+		#walkNoiseHeard = true
+		
+	#print("walkNoise " ,walkNoiseHeard, " walkDetectCheck ", near, " current ", state_machine.get_current_node(), " PlayerState ", Global.stateCheck._current().name)
+	#print ($ucAnimPlay.animation_changed)
+	
+	if hasEntered:
+		if noiseHeard and $Instant_Ear.has_overlapping_bodies():
 			isChasing = true
 			chaseTimer = Difficulty.ucChaseTimer
+		#if walkNoiseHeard and near and $Near_Ear.has_overlapping_bodies():
+			#isChasing = true
+			#chaseTimer = Difficulty.ucChaseTimer
+
 	if(chaseTimer <= 0):
 		isChasing = false
 		normalNoise = true
@@ -99,7 +112,6 @@ func _process(delta):
 			playedOnce = true
 			$ScreamPlayer.play()
 		idleTimer = -1.25
-		look_at(global_transform.origin, Vector3.UP)
 		anim_tree.set("parameters/conditions/scream", isChasing)
 		chase()
 		speed = chasingSpeed
@@ -222,3 +234,15 @@ func _on_runnning_breath_player_finished() -> void:
 
 func _on_audio_stream_player_finished() -> void:
 	$AudioStreamPlayer.play()
+
+#func _on_near_ear_body_entered(body: Node3D) -> void:
+	#if(body.is_in_group("Player")):
+		#near = true
+#
+#func _on_near_ear_body_exited(body: Node3D) -> void:
+	#var i = 0
+	#if i <= 50:
+		#i += 0.1
+	#if(body.is_in_group("Player")):
+		#if i >= 10:
+			#near = false

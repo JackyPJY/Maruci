@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://dac48ja20wpnv"]
+[gd_scene load_steps=47 format=3 uid="uid://dac48ja20wpnv"]
 
 [ext_resource type="Script" path="res://Scripts/Player_Movement.gd" id="1_8xdgj"]
 [ext_resource type="PackedScene" uid="uid://dfe31afh2scn" path="res://Assets/Medieval props/Prefabs/LanternV3.prefab.scn" id="2_wy1ug"]
@@ -21,6 +21,8 @@
 [ext_resource type="Script" path="res://Scripts/crouch_walking_player_state.gd" id="17_42rnb"]
 [ext_resource type="AudioStream" uid="uid://c4mu2dbonnt23" path="res://Assets/Sound/SFX/New Stone Walk Step(718882__gizemhozdemir__steps).wav" id="17_grsbi"]
 [ext_resource type="AudioStream" uid="uid://4wivqm1sftpd" path="res://Assets/Sound/SFX/Stone Running (491204__negroespumoso__steps-on-rock).wav" id="18_pxac0"]
+[ext_resource type="Texture2D" uid="uid://d3pds3t71bd45" path="res://Assets/Scroll.png" id="20_sk5p1"]
+[ext_resource type="Texture2D" uid="uid://dpf4vhtkoiujs" path="res://Assets/Scroll Instruction.png" id="23_8d37k"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fj8bh"]
 
@@ -183,12 +185,13 @@ theme_override_constants/margin_bottom = 100
 layout_mode = 2
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Head"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, -17.25)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 21.85, -17.25)
 visibility_parent = NodePath(".")
 layers = 524288
 mesh = SubResource("PrismMesh_upu74")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.85, 0)
 visibility_parent = NodePath(".")
 layers = 524288
 mesh = SubResource("TorusMesh_sdrw3")
@@ -346,6 +349,15 @@ text = "10"
 horizontal_alignment = 2
 metadata/_edit_use_anchors_ = true
 
+[node name="TextureRect" type="TextureRect" parent="ItemReminder2"]
+layout_mode = 0
+offset_left = -273.0
+offset_top = 26.0
+offset_right = 1002.0
+offset_bottom = 901.0
+scale = Vector2(0.240002, 0.28)
+texture = ExtResource("20_sk5p1")
+
 [node name="PauseUI" parent="." instance=ExtResource("5_tq1fb")]
 process_priority = 0
 visible = false
@@ -380,8 +392,25 @@ show_percentage = false
 [node name="Map" parent="." instance=ExtResource("11_xp8px")]
 visible = false
 
+[node name="Control3" type="Control" parent="Map"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1080.0
+offset_top = 406.0
+offset_right = 1120.0
+offset_bottom = 446.0
+
+[node name="TextureRect" type="TextureRect" parent="Map/Control3"]
+layout_mode = 0
+offset_left = -163.0
+offset_top = -160.0
+offset_right = 1112.0
+offset_bottom = 715.0
+scale = Vector2(0.342271, 0.377423)
+texture = ExtResource("23_8d37k")
+
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 24.5, 0)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 46.35, 0)
 layers = 524288
 light_cull_mask = 4294967294
 spot_range = 39.2
